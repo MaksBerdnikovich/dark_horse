@@ -1,0 +1,53 @@
+.footer{
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    padding-top: 100px;
+
+    @include media-mdx{
+        padding-top: 50px;
+    }
+
+    &__wrap{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        width: 100%;
+        background-color: rgba($blue, 0.1);
+
+        @include media-sm{
+            flex-direction: column;
+            padding: 10px;
+        }
+    }
+
+    &__socials{
+        position: absolute;
+        left: 20px;
+        top: -58px;
+        z-index: 1;
+
+        @include media-lgx{
+            position: relative;
+            left: auto;
+            top: auto;
+            padding: 0 35px;
+        }
+
+        @include media-sm{
+            padding: 10px;
+        }
+    }
+
+    &__copy{
+        padding: 0 35px;
+        font-size: 15px;
+        z-index: 1;
+
+        @include media-sm{
+            padding: 10px;
+        }
+    }
+}

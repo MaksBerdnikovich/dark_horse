@@ -1,0 +1,98 @@
+.exchange{
+    position: relative;
+    margin: 0;
+}
+
+.exchange__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.exchange__block{
+    width: 50%;
+    padding: 0 15px;
+
+    @include media-md{
+        width: 100%;
+    }
+
+    .calc-form__step1{
+        min-height: 700px;
+    }
+
+    .currency__list{
+        margin-top: 12px;
+    }
+
+    .currency__list ul{
+        margin: 0 -6px;
+    }
+
+    .currency__list ul li{
+        width: 50%;
+        margin-top: 10px;
+        padding: 0 6px;
+
+        @include media-xs{
+            width: 100%;
+        }
+    }
+
+    .currency__item{
+        justify-content: center;
+    }
+
+    .currency__area{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 35px;
+    }
+
+    .currency__area-list{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+
+        @include media-xs{
+            flex-direction: column;
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        i{
+            margin-top: 5px;
+            margin-bottom: -10px;
+            min-width: 160px;
+
+            @include media-sm{
+                min-width: auto;
+            }
+        }
+    }
+
+    .currency__area-list .tx-primary{
+        @include font-700;
+    }
+
+    .currency__area-list .separator{
+        opacity: 0.3;
+        margin: -5px 0;
+
+        @include media-xs{
+            margin: 15px 0;
+        }
+
+        i{
+            min-width: auto;
+        }
+    }
+}

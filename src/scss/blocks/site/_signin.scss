@@ -1,0 +1,28 @@
+.signin{
+    position: relative;
+    margin-top: 220px;
+    padding-bottom: 40px;
+
+    &__tabs{
+        position: relative;
+    }
+
+    &__tabs-nav{
+        li{
+            width: 50%;
+            margin-bottom: 15px;
+        }
+
+        a{
+            min-height: 35px;
+        }
+    }
+
+    &__tabs-body{
+        padding: 0;
+    }
+
+    .form-line{
+        margin-top: 15px;
+    }
+}

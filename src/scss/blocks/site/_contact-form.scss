@@ -1,0 +1,49 @@
+.contact-form{
+    position: relative;
+    padding-top: 200px;
+
+    @include media-mdx{
+        padding-top: 150px;
+    }
+
+    @include media-sm{
+        padding-top: 100px;
+    }
+
+    &__wrap{
+        position: relative;
+        padding: 35px 40px 40px 40px;
+        border-radius: 36px;
+        background: linear-gradient(90deg, rgba(227, 50, 250, 0.4) 0%, rgba(116, 56, 245, 0.4) 100%);
+
+        @include media-sm{
+            padding: 40px 15px;
+        }
+    }
+
+    &__desc{
+        position: relative;
+        margin-top: 50px;
+    }
+
+    &__form{
+        position: relative;
+        margin-top: 30px;
+
+        .form{
+            margin: 0 -25px;
+        }
+
+        .form-col{
+            padding: 0 25px;
+
+            @include media-md{
+                width: 100% !important;
+            }
+        }
+
+        .form-line{
+            margin-top: 15px;
+        }
+    }
+}

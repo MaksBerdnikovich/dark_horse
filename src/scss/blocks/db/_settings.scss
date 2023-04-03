@@ -1,0 +1,51 @@
+.settings{
+    position: relative;
+
+    .form{
+        margin-top: 30px;
+    }
+
+    .form-line{
+        margin-top: 15px;
+    }
+
+    .page-title__wrap{
+        padding-left: 70px;
+    }
+
+    .btn-group{
+        margin-top: 30px;
+    }
+
+    .checkbox-group{
+        margin-top: 40px;
+
+        @include media-sm{
+            margin-top: 0;
+        }
+    }
+
+    &__block{
+        margin-top: 50px;
+    }
+
+    &__block.block--payments{
+        .input-group{
+            padding-left: 45px;
+
+            @include media-xs{
+                padding: 0;
+            }
+
+            i{
+                position: absolute;
+                left: 0;
+                bottom: 14px;
+
+                @include media-xs{
+                    display: none;
+                }
+            }
+        }
+    }
+}

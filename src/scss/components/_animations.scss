@@ -1,0 +1,44 @@
+@keyframes twinkle {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(175px, 100px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform:translate(8000px, 4000px);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes bounce-invert {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}

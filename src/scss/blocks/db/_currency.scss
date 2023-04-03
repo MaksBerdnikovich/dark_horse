@@ -1,0 +1,93 @@
+.currency{
+    position: relative;
+
+    input[type=radio] {
+        display: none;
+    }
+
+    label{
+        transition: $transition;
+        cursor: pointer;
+    }
+
+    label:hover {
+        opacity: 0.8;
+    }
+
+    input[type=radio]:checked + label {
+        opacity: 1 !important;
+        background-image: linear-gradient(to right, #dcb54e, #c1307b);
+        box-shadow: 0 0 15px 2px rgba(220, 181, 78, 0.3);
+
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    input[type=radio]:disabled + label {
+        opacity: 0.3;
+    }
+
+    &__list {
+        position: relative;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        li{
+            padding: 0 15px;
+            margin-top: 30px;
+            width: 25%;
+
+            @include media-sm{
+                width: 50%;
+            }
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 105px;
+        padding: 10px;
+        background-image: url("../images/bg/curr.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 16px;
+        @include gradient-border($white, $white, 16px);
+
+        .icon{
+            position: relative;
+            display: flex;
+            align-items: center;
+            max-height: 40px;
+        }
+
+        .balance{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .body-small{
+            font-size: 14px;
+        }
+
+        .tx-primary{
+            padding-top: 5px;
+            @include font-700;
+            font-size: 18px;
+        }
+    }
+}

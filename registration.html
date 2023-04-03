@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Horse</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Dark Horse">
+    <meta property="og:site_name" content="Dark Horse">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="template" style="background-image: url('dist/images/bg/signin.jpg'); background-size: cover;">
+
+<header class="header-sign">
+    <div class="container">
+        <div class="header-sign__wrap">
+            <div class="header-sign__socials">
+                <ul class="socials">
+                    <li class="socials__item"><a href="#"><i class="icon-tg"></i></a></li>
+                    <li class="socials__item"><a href="#"><i class="icon-fb"></i></a></li>
+                    <li class="socials__item"><a href="#"><i class="icon-ins"></i></a></li>
+                    <li class="socials__item"><a href="#"><i class="icon-tw"></i></a></li>
+                    <li class="socials__item"><a href="#"><i class="icon-yo"></i></a></li>
+                </ul>
+            </div>
+            <div class="header-sign__logo">
+                <a href="index.html"><img src="dist/images/logo/logo-hd.png" alt="logo"></a>
+            </div>
+            <div class="header-sign__faq">
+                <a href="faq.html">FAQ</a>
+                <a href="#">support</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+    <section class="signin">
+        <div class="container container--aside">
+            <div class="signin__tabs tabs" data-tab data-tab-preset>
+                <div class="signin__tabs-nav tabs__nav">
+                    <ul>
+                        <li><a href="#tab1" class="card2 " data-tab-nav>LOg in</a></li>
+                        <li><a href="#tab2" class="card2" data-tab-nav data-tab-active>sign up</a></li>
+                    </ul>
+                </div>
+                <div id="tab1" class="signin__tabs-body tabs__body " data-tab-body>
+                    <form id="loginForm" class="form" action="" method="post">
+                        <div class="form-col form-col--100">
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Log in:</label>
+                                    <input type="text" name="login" required>
+                                </div>
+                                <div class="error-msg">Enter valid login</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Password:</label>
+                                    <input type="password" name="password" required>
+                                </div>
+                                <div class="error-msg">Enter valid password</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Captcha:</label>
+                                    <div class="captcha">
+                                        <input type="text" name="login-captcha" required>
+                                        <img src="dist/images/captcha.png" alt="captcha">
+                                    </div>
+                                </div>
+                                <div class="error-msg">Enter valid captcha</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="forgot-group"><a href="#">Forgot your password?</a></div>
+                            </div>
+                            <div class="form-line">
+                                <div class="btn-group btn-group--center">
+                                    <button type="submit" class="btn btn-secondary"><span>sign in</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="tab2" class="signin__tabs-body tabs__body" data-tab-body data-tab-active>
+                    <form id="registrationForm" class="form" action="" method="post">
+                        <div class="form-col form-col--100">
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Log in:</label>
+                                    <input type="text" name="login" required>
+                                </div>
+                                <div class="error-msg">Enter valid login</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>E-mail:</label>
+                                    <input type="text" name="email" required>
+                                </div>
+                                <div class="error-msg">Enter valid email</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Create a password:</label>
+                                    <input type="password" name="password" required>
+                                </div>
+                                <div class="error-msg">Enter valid password</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Repeat password:</label>
+                                    <input type="password" name="password_repeat" required>
+                                </div>
+                                <div class="error-msg">Enter valid password</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <label>Captcha:</label>
+                                    <div class="captcha">
+                                        <input type="text" name="registration-captcha" required>
+                                        <img src="dist/images/captcha.png" alt="captcha">
+                                    </div>
+                                </div>
+                                <div class="error-msg">Enter valid captcha</div>
+                            </div>
+                            <div class="form-line">
+                                <div class="checkbox-group">
+                                    <label class="checkbox-group__handle">
+                                        <input type="checkbox" name="agrees" required>
+                                        <span class="checkbox-group__marker"></span>
+                                        <span class="checkbox-group__label">
+                                                I agree with the <a href="#">rules and agreements</a>, as well as with the possible risks.
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-line">
+                                <div class="btn-group btn-group--center">
+                                    <button type="submit" class="btn btn-secondary"><span>sign up</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+<script>
+    $(function () {
+        const $form = $('#loginForm');
+        const $login = $('input[name="login"]', $form);
+        const $captcha = $('input[name="login-captcha"]', $form);
+        const $password = $('input[name="password"]', $form);
+
+        const error = ($el) => {
+            $el.attr('required');
+            $el.parents('.form-line').addClass('error');
+        }
+        const valid = ($el) => {
+            $el.removeAttr('required');
+            $el.parents('.form-line').removeClass('error');
+        }
+
+        $form.on('click', 'button', (e) => {
+            e.preventDefault()
+
+            // check login
+            validator.isEmpty($login.val()) ? error($login) : valid($login);
+
+            // check password
+            !validator.isStrongPassword($password.val()) ? error($password) : valid($password);
+
+            // check captcha
+            validator.isEmpty($captcha.val()) ? error($captcha) : valid($captcha);
+
+            let required = 0
+            $('input', $form).each((i, el) => {
+                if ($(el).attr('required')) required++
+            })
+
+            if (required === 0) $form.submit()
+
+            return false;
+        })
+    });
+</script>
+
+<script>
+    $(function () {
+        const $form = $('#registrationForm');
+        const $login = $('input[name="login"]', $form);
+        const $email = $('input[name="email"]', $form);
+        const $password = $('input[name="password"]', $form);
+        const $passwordRepeat = $('input[name="password_repeat"]', $form);
+        const $agrees = $('input[name="agrees"]', $form);
+        const $captcha = $('input[name="registration-captcha"]', $form);
+
+        const error = ($el) => {
+            $el.attr('required');
+            $el.parents('.form-line').addClass('error');
+        }
+
+        const valid = ($el) => {
+            $el.removeAttr('required');
+            $el.parents('.form-line').removeClass('error');
+        }
+
+        $form.on('click', 'button', (e) => {
+            e.preventDefault()
+
+            // check login
+            validator.isEmpty($login.val()) ? error($login) : valid($login);
+
+            // check email
+            !validator.isEmail($email.val()) ? error($email) : valid($email);
+
+            // check password
+            !validator.isStrongPassword($password.val()) ? error($password) : valid($password);
+            !validator.isStrongPassword($passwordRepeat.val()) || ($passwordRepeat.val() !== $password.val()) ? error($passwordRepeat) : valid($passwordRepeat);
+
+            // check agrees
+            !$agrees.is(':checked') ? error($agrees) : valid($agrees)
+
+            // check captcha
+            validator.isEmpty($captcha.val()) ? error($captcha) : valid($captcha);
+
+            let required = 0
+            $('input', $form).each((i, el) => {
+                if ($(el).attr('required')) required++
+            })
+
+            if (required === 0) $form.submit()
+
+            return false
+        })
+    });
+</script>
+
+</body>
+</html>

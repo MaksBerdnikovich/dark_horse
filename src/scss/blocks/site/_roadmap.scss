@@ -1,0 +1,110 @@
+.roadmap {
+    position: relative;
+    padding-top: 200px;
+
+    @include media-mdx{
+        padding-top: 150px;
+    }
+
+    @include media-sm{
+        padding-top: 100px;
+    }
+
+    &__carousel{
+        position: relative;
+        margin-top: 50px;
+    }
+
+    &__carousel-slide{
+        position: relative;
+        width: 20%;
+        min-width: 320px;
+        min-height: 100px;
+        padding: 0 25px;
+        overflow: visible;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 85px;
+            left: -85px;
+            width: 168px;
+            height: 1px;
+            background-image: url("../images/icons/line.png");
+        }
+    }
+
+    &__carousel-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        .title-h6{
+            display: flex;
+            align-items: flex-end;
+            min-height: 45px;
+        }
+
+        .icon{
+            position: relative;
+            margin-top: 15px;
+
+            &:before{
+                font-family: 'icons';
+                font-size: 28px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+
+            &:after{
+                font-family: 'icons';
+                font-size: 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+            }
+        }
+
+        &.item--now .icon{
+            &:before{
+                content: "\e90f";
+                color: $primary;
+            }
+
+            &:after{
+                content: "\e90e";
+                color: $pink;
+            }
+        }
+
+        &.item--prev .icon{
+            &:before{
+                content: "\e90e";
+                color: $pink;
+            }
+        }
+
+        &.item--next .icon{
+            &:before{
+                content: "\e90f";
+                color: $primary;
+            }
+        }
+
+        .date{
+            margin-top: 15px;
+        }
+
+        .text{
+            margin-top: 15px;
+        }
+    }
+}

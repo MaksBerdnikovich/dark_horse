@@ -1,0 +1,38 @@
+.filter{
+    position: relative;
+    padding: 25px 40px 60px 40px;
+
+    @include media-sm{
+        padding: 20px 20px 60px 20px;
+    }
+
+    &__list{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &__item{
+        width: 25%;
+        padding: 0 20px;
+
+        @include media-md{
+            width: 50%;
+            margin: 10px 0;
+        }
+
+        @include media-sm{
+            width: 100%;
+        }
+    }
+
+    &__btn{
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+}
+

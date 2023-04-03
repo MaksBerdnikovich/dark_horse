@@ -1,0 +1,303 @@
+.navigation{
+    position: relative;
+    width: 220px;
+    margin-top: -60px;
+    padding: 0 5px;
+    z-index: 100;
+
+    @include media-lg{
+        width: 100%;
+        margin: 0;
+    }
+
+    &__logo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 2;
+
+        @include media-lg{
+            position: absolute;
+            width: 220px;
+            top: -60px;
+            left: -60px;
+        }
+
+        @include media-md{
+            width: 140px;
+            top: -60px;
+            left: -40px;
+        }
+
+        @include media-sm{
+            width: 220px;
+            top: -180px;
+            left: -60px;
+        }
+
+        @include media-xs{
+            width: 140px;
+            top: -130px;
+            left: -40px;
+        }
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__menu{
+        position: relative;
+        z-index: 1;
+
+        @include media-lg{
+            width: calc(100% - 180px);
+            margin-left: auto;
+        }
+
+        @include media-md{
+            width: calc(100% - 80px);
+        }
+
+        @include media-sm{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 20px 20px 20px;
+            justify-content: center;
+            margin: 0;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: $transition;
+            background-color: $dark;
+            border-bottom-left-radius: 36px;
+            border-bottom-right-radius: 36px;
+            overflow: hidden;
+
+            &.open {
+                z-index: 100;
+                visibility: visible;
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            @include media-lg{
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 0 -5px;
+            }
+        }
+
+        li{
+            position: relative;
+            width: 100%;
+            margin-top: -93px;
+
+            @include media-lg{
+                width: calc(100% / 6);
+                padding: 0 5px;
+                margin-top: 30px;
+            }
+
+            @include media-md{
+                margin-top: 20px;
+            }
+
+            @include media-sm{
+                width: calc(100% / 3);
+                margin-top: 10px;
+            }
+
+            @include media-xs{
+                width: 50%;
+            }
+
+            &:nth-child(1){
+                z-index: 10;
+            }
+
+            &:nth-child(2){
+                z-index: 9;
+            }
+
+            &:nth-child(3){
+                z-index: 8;
+            }
+
+            &:nth-child(4){
+                z-index: 7;
+            }
+
+            &:nth-child(5){
+                z-index: 6;
+            }
+
+            &:nth-child(6){
+                z-index: 5;
+            }
+
+            &:nth-child(7){
+                z-index: 4;
+            }
+
+            &:nth-child(8){
+                z-index: 3;
+            }
+
+            &:nth-child(9){
+                z-index: 2;
+            }
+
+            &:nth-child(10){
+                z-index: 1;
+            }
+        }
+
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            width: 100%;
+            height: 212px;
+            padding-bottom: 40px;
+            overflow: hidden;
+            background-image: url("../images/db/nav2.png");
+            background-repeat: no-repeat;
+            background-position: center 3px;
+            transition: opacity 0.3s;
+            text-align: center;
+
+            @include media-lg{
+                justify-content: center;
+                flex-direction: column-reverse;
+                height: 80px;
+                padding: 0;
+                border-radius: 10px;
+                background-image: none;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, rgba(227, 50, 250, 0.4) 0%, rgba(38, 102, 212, 0.51) 50%, rgba(255, 255, 255, 0.19) 100%);
+                    opacity: 0.5;
+                }
+            }
+
+            &:hover{
+                background-position: center bottom;
+                opacity: 0.8;
+            }
+
+            &.active{
+                background-position: center bottom;
+                opacity: 1;
+
+                @include media-lg{
+                    background: linear-gradient(101deg, #7437f4 0%, #e231fb 100%);
+                }
+            }
+        }
+
+        i{
+            margin-top: 15px;
+            font-size: 25px;
+            @include text-gradient(#E231FB, #55caff);
+
+            @include media-lg{
+                position: relative;
+                margin: 0;
+                z-index: 1;
+            }
+
+            @include media-md{
+                font-size: 22px;
+            }
+        }
+
+        span{
+            @include font-400;
+            text-transform: uppercase;
+
+            @include media-lg{
+                position: relative;
+                font-size: 14px;
+                padding-top: 10px;
+                z-index: 1;
+            }
+
+            @include media-md{
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__menu-toggle{
+        display: none;
+
+        position: fixed;
+        top: 0;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 8px;
+        background-color: $dark-90;
+
+        @include media-sm{
+            display: flex;
+        }
+
+        .line{
+            position: absolute;
+            width: 28px;
+            height: 1px;
+            top: 50%;
+            left: 50%;
+            margin-left: -14px;
+            background-color: $primary;
+            transition: $transition;
+        }
+
+        .line--1{
+            margin-top: -9px;
+        }
+
+        .line--3{
+            margin-top: 9px;
+        }
+
+        &.open {
+            z-index: 101;
+
+            .line--1{
+                margin-top: 0;
+                transform: rotate(40deg);
+            }
+
+            .line--2{
+                opacity: 0;
+            }
+
+            .line--3{
+                margin-top: 0;
+                transform: rotate(-40deg);
+            }
+        }
+    }
+}

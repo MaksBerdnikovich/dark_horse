@@ -1,0 +1,25 @@
+.transfer{
+    position: relative;
+}
+
+.transfer__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.transfer__block{
+    width: 50%;
+    padding: 0 15px;
+
+    @include media-sm{
+        width: 100%;
+    }
+
+    &:last-child{
+        @include media-sm{
+            margin-top: 30px;
+        }
+    }
+}

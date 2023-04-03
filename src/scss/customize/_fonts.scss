@@ -1,0 +1,131 @@
+@mixin font-face($url, $weight){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/#{$url}.woff") format('woff'),
+        url("../fonts/#{$url}.woff2") format("woff2");
+
+        font-family: 'Roboto';
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+@include font-face('Roboto-Thin', 100);
+@include font-face('Roboto-Light', 300);
+@include font-face('Roboto-Regular', 400);
+@include font-face('Roboto-Medium', 500);
+@include font-face('Roboto-Bold', 700);
+@include font-face('Roboto-Black', 900);
+
+@mixin font-face-second($url, $weight){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/#{$url}.woff") format('woff'),
+        url("../fonts/#{$url}.woff2") format("woff2");
+
+        font-family: 'Play';
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+@include font-face-second('Play-Regular', 400);
+@include font-face-second('Play-Bold', 700);
+
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons.eot');
+    src: url('../fonts/icons.eot') format('embedded-opentype'),
+    url('../fonts/icons.ttf') format('truetype'),
+    url('../fonts/icons.woff') format('woff'),
+    url('../fonts/icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right-arrow:before {
+    content: "\e916";
+}
+.icon-left-arrow:before {
+    content: "\e917";
+}
+.icon-close:before {
+    content: "\e900";
+}
+.icon-copy2:before {
+    content: "\e901";
+}
+.icon-menu-6:before {
+    content: "\e902";
+}
+.icon-menu-5:before {
+    content: "\e903";
+}
+.icon-menu-4:before {
+    content: "\e904";
+}
+.icon-menu-3:before {
+    content: "\e905";
+}
+.icon-menu-2:before {
+    content: "\e906";
+}
+.icon-menu-1:before {
+    content: "\e907";
+}
+.icon-copy:before {
+    content: "\e908";
+}
+.icon-ava:before {
+    content: "\e909";
+}
+.icon-check:before {
+    content: "\e90a";
+}
+.icon-minus:before {
+    content: "\e90b";
+}
+.icon-plus:before {
+    content: "\e90c";
+}
+.icon-pagi-3:before {
+    content: "\e90d";
+}
+.icon-pagi-2:before {
+    content: "\e90e";
+}
+.icon-pagi-1:before {
+    content: "\e90f";
+}
+.icon-arrow-input:before {
+    content: "\e910";
+}
+.icon-yo:before {
+    content: "\e911";
+}
+.icon-tw:before {
+    content: "\e912";
+}
+.icon-ins:before {
+    content: "\e913";
+}
+.icon-fb:before {
+    content: "\e914";
+}
+.icon-tg:before {
+    content: "\e915";
+}

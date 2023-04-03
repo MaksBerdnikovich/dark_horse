@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Horse</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Dark Horse">
+    <meta property="og:site_name" content="Dark Horse">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="dashboard">
+
+<header class="header">
+    <div class="header__list">
+        <ul>
+            <li>
+                <i><img src="dist/images/icons/user.png" alt="Welcome"></i>
+                <p>
+                    <span class="body-tiny">Welcome:</span>
+                    <b class="title-h6">Username_38262577</b>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta1.png" alt="Last entrance"></i>
+                <p>
+                    <span class="body-tiny">Last entrance:</span>
+                    <span class="tx-primary">12-12-2021 <span class="time">23:00</span></span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta2.png" alt="Last login with IP"></i>
+                <p>
+                    <span class="body-tiny">Last login with IP:</span>
+                    <span class="tx-primary">23.456.78.90</span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta3.png" alt=" Invited you"></i>
+                <p>
+                    <span class="body-tiny">Invited you:</span>
+                    <span class="tx-primary">Username_236561454</span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta4.png" alt="Your referral link"></i>
+                <p>
+                    <span class="body-tiny">Your referral link:</span>
+                    <a href="javascript:void(0)" data-clipboard data-clipboard-text="https://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4">
+                        <code>https://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4</code>
+                        <i class="icon-copy" data-clipboard-confirm></i>
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main-content">
+    <nav class="navigation">
+        <div class="navigation__logo">
+            <a href="index.html"><img src="dist/images/logo/logo-hd.png" alt="logo"></a>
+        </div>
+
+        <nav class="navigation__menu" data-menu-nav>
+            <ul>
+                <li><a href="dashboard.html"><span>Dashboard</span><i class="icon-menu-1"></i></a></li>
+                <li><a href="deposits.html"><span>my deposits</span><i class="icon-menu-2"></i></a></li>
+                <li><a href="transactions.html"><span>transactions</span><i class="icon-menu-3"></i></a></li>
+                <li><a href="partners.html"><span>partners</span><i class="icon-menu-4"></i></a></li>
+                <li><a href="settings.html" class="active"><span>settings</span><i class="icon-menu-5"></i></a></li>
+                <li><a href="#"><span>log out</span><i class="icon-menu-6"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="navigation__menu-toggle" data-menu-toggle>
+            <span class="line line--1"></span>
+            <span class="line line--2"></span>
+            <span class="line line--3"></span>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="statistics">
+            <div class="carousel" data-stats-carousel>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/1.png" alt="btc">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. BTC</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. BTC</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. BTC</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/2.png" alt="eth">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. ETH</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. ETH</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. ETH</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/3.png" alt="bnb">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. BNB</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. BNB</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. BNB</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/4.png" alt="tron">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. TRON</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. TRON</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. TRON</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/5.png" alt="xrp">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. XRP</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. XRP</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. XRP</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/6.png" alt="doge">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. DOGE</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. DOGE</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. DOGE</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/7.png" alt="trc20">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. USDT</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/8.png" alt="erc20">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. USDT</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu">
+            <div class="page-title-db">
+                <div class="page-title-db__wrap">
+                    <i><img src="dist/images/icons/menu-5.svg" alt="title"></i>
+                    <h2>settings</h2>
+                </div>
+            </div>
+
+            <div class="submenu__list">
+                <a href="balance.html" class="btn btn-primary">top up balance</a>
+                <a href="deposits-open.html" class="btn btn-secondary btn-small">open deposit</a>
+                <a href="withdraw.html" class="btn btn-styled">withdraw</a>
+            </div>
+        </div>
+
+       <div class="settings">
+           <div class="settings__block card3">
+               <div class="page-title">
+                   <div class="page-title__wrap">
+                       <img src="dist/images/icons/t12.png" alt="title">
+                       <h4><span class="tx-primary">Personal</span> data</h4>
+                   </div>
+               </div>
+
+               <form class="form" action="" method="post">
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Full Name:</label>
+                               <input type="text" name="name">
+                           </div>
+                       </div>
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>E-mail:</label>
+                               <input type="text" name="email">
+                           </div>
+                       </div>
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Login:</label>
+                               <input type="text" name="login">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Phone number:</label>
+                               <input type="text" name="phone">
+                           </div>
+                       </div>
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Telegram:</label>
+                               <input type="text" name="te">
+                           </div>
+                       </div>
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Facebook:</label>
+                               <input type="text" name="fb">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--100">
+                       <div class="form-line">
+                           <div class="btn-group btn-group--center">
+                               <button type="submit" class="btn btn-primary"><span>save</span></button>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+
+           <div class="settings__block card3">
+               <div class="page-title">
+                   <div class="page-title__wrap">
+                       <img src="dist/images/icons/t13.png" alt="title">
+                       <h4><span class="tx-primary">password</span> change</h4>
+                   </div>
+               </div>
+
+               <form class="form" action="" method="post">
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Your current password:</label>
+                               <input type="password" name="password">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>New password:</label>
+                               <input type="password" name="password_new">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Repeat new password:</label>
+                               <input type="password" name="password_confirm">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--100">
+                       <div class="form-line">
+                           <div class="btn-group btn-group--center">
+                               <button type="submit" class="btn btn-primary"><span>save</span></button>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+
+           <div class="settings__block card3">
+               <div class="page-title">
+                   <div class="page-title__wrap">
+                       <img src="dist/images/icons/t14.png" alt="title">
+                       <h4><span class="tx-primary">Security</span> Settings</h4>
+                   </div>
+               </div>
+
+               <form class="form" action="" method="post">
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="select-group">
+                               <label>Your timezone:</label>
+                               <select data-select>
+                                   <option value="1">+1:00</option>
+                                   <option value="2">+2:00</option>
+                                   <option value="3">+3:00</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="checkbox-group">
+                               <label class="checkbox-group__handle">
+                                   <input type="checkbox" name="receive">
+                                   <span class="checkbox-group__marker"></span>
+                                   <span class="checkbox-group__label">Do not receive e-mail alerts</span>
+                               </label>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="select-group">
+                               <label>IP address change control:</label>
+                               <select data-select>
+                                   <option value="1">Yes</option>
+                                   <option value="2">No</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="checkbox-group">
+                               <label class="checkbox-group__handle">
+                                   <input type="checkbox" name="receive">
+                                   <span class="checkbox-group__marker"></span>
+                                   <span class="checkbox-group__label">Bind a session to an IP address</span>
+                               </label>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="select-group">
+                               <label>Auto logout after N minutes (0 by default)</label>
+                               <select data-select>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="checkbox-group">
+                               <label class="checkbox-group__handle">
+                                   <input type="checkbox" name="session">
+                                   <span class="checkbox-group__marker"></span>
+                                   <span class="checkbox-group__label">Prohibit parallel sessions</span>
+                               </label>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--100">
+                       <div class="auth-group">
+                           <div class="auth-group__title">
+                               <h4><span class="tx-primary">Google</span> Authenticator</h4>
+                           </div>
+                           <div class="auth-group__wrap">
+                               <div class="auth-group__block">
+                                   <div class="auth-group__key">
+                                       <span>To activate Google Authenticator, use the key:</span>
+                                       <code>RG7337GJK3848243H</code>
+                                   </div>
+                                   <div class="auth-group__area">
+                                       <div class="input-group">
+                                           <label>Enter the code from the application:</label>
+                                           <input type="text" value="" name="" />
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="auth-group__block">
+                                   <div class="auth-group__qr">
+                                       <img src="dist/images/db/qr.png" alt="qr">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--100">
+                       <div class="form-line">
+                           <div class="btn-group btn-group--center">
+                               <button type="submit" class="btn btn-primary"><span>save</span></button>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+
+           <div class="settings__block block--payments card3">
+               <div class="page-title">
+                   <div class="page-title__wrap">
+                       <img src="dist/images/icons/t15.png" alt="title">
+                       <h4><span class="tx-primary">Payment</span> details</h4>
+                   </div>
+               </div>
+
+               <form class="form" action="" method="post">
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Bitcoin:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/btc.png" alt="btc"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Tron:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/tron.png" alt="tron"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Ethereum:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/eth.png" alt="eth"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Ripple:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/ripple.png" alt="ripple"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>BNB:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/bnb.png" alt="bnb"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Dogecoin:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/doge.png" alt="doge"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Tether USDT TRC20::</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/trc20.png" alt="trc20"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--50">
+                       <div class="form-line">
+                           <div class="input-group">
+                               <label>Tether USDT ERC20:</label>
+                               <input type="text" name="name">
+                               <i><img src="dist/images/pays/erc20.png" alt="erc20"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-col form-col--100">
+                       <div class="form-line">
+                           <div class="btn-group btn-group--center">
+                               <button type="submit" class="btn btn-primary"><span>save</span></button>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+       </div>
+    </section>
+
+    <section class="sidebar">
+        <div class="sidebar__block">
+            <h4 class="sidebar__title"><span class="tx-primary">last</span> operations</h4>
+
+            <ul class="sidebar__operations">
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/btc.png" alt="btc"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/eth.png" alt="eth"></i>
+                        <p>
+                            <span class="tx-primary">Withdrawals</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--down"><span>-32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/bnb.png" alt="bnb"></i>
+                        <p>
+                            <span class="tx-primary">Withdrawals</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/tron.png" alt="tron"></i>
+                        <p>
+                            <span class="tx-primary">Replenishment</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/ripple.png" alt="ripple"></i>
+                        <p>
+                            <span class="tx-primary">Referral</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--down"><span>-32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/doge.png" alt="doge"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/trc20.png" alt="trc20"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar__block">
+            <h4 class="sidebar__title"><span class="tx-primary">latest</span> reviews</h4>
+
+            <ul class="sidebar__reviews">
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate...
+                            </p>
+                        </div>
+                        <div class="sidebar__reviews-item-link"><a href="#">More</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__socials">
+            <ul class="socials">
+                <li class="socials__item"><a href="#"><i class="icon-tg"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-fb"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-ins"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-tw"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-yo"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__copy">"Dark horse" all rights reserved © 2023</div>
+    </div>
+</footer>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+.faq{
+    position: relative;
+
+    &__accordion{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+
+        .page-title{
+            margin-bottom: 50px;
+        }
+    }
+
+    &__accordion-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        & + .faq__accordion-item{
+            margin-top: 10px;
+        }
+    }
+
+    &__accordion-item-title{
+        position: relative;
+
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 65px;
+            padding: 5px 70px 5px 35px;
+
+            @include font-400;
+            font-size: 24px;
+            color: $primary;
+            background-color: rgba($white, 0.05);
+            border-top: 1px solid rgba($white, 0.1);
+
+            @include media-sm{
+                padding: 5px 70px 5px 15px;
+                font-size: 18px;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: rgba($white, 0.1);
+            }
+
+            &:hover {
+                opacity: 1;
+
+                i{
+                    box-shadow: 0 0 5px 3px rgba(227, 50, 250, 0.66);
+                    border-radius: 100%;
+                    opacity: 1;
+                }
+            }
+
+            &.active{
+                opacity: 1;
+                border-bottom: 0;
+
+                &:after{
+                    display: none;
+                }
+
+                span{
+                    @include text-gradient(#E231FB, #55caff);
+                }
+            }
+
+            &.active i:before {
+                content: "\e90b";
+            }
+        }
+
+        span{
+            line-height: 1.2;
+        }
+
+        i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            transition: $transition;
+        }
+
+        i:before{
+            content: "\e90c";
+            font-family: 'icons';
+            font-size: 25px;
+            @include text-gradient(#E231FB, #55caff);
+        }
+    }
+
+    &__accordion-item-body{
+        position: relative;
+        padding: 20px 35px;
+        border-bottom: 1px solid rgba($white, 0.1);
+
+        @include media-sm{
+            padding: 15px;
+        }
+
+        p{
+            font-weight: 300;
+        }
+    }
+}

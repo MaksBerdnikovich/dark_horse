@@ -1,0 +1,11 @@
+.transactions{
+    position: relative;
+
+    @include media-sm{
+        padding-bottom: 40px;
+    }
+
+    .filter{
+        margin-top: 50px;
+    }
+}

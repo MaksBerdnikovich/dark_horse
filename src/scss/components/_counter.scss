@@ -1,0 +1,66 @@
+.counter{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 60px 30px;
+    min-height: 200px;
+
+    @include media-lg{
+        padding: 60px 30px 60px 0;
+    }
+
+    @include media-mdx{
+        justify-content: center;
+        padding: 20px 100px 20px 160px;
+    }
+
+    @include media-md{
+        padding: 20px 0;
+    }
+
+    li{
+        display: flex;
+        width: 25%;
+
+        @include media-mdx{
+            width: 50%;
+            margin: 25px 0;
+        }
+
+        @include media-sm{
+            width: 100%;
+        }
+    }
+
+    &__wrap{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -15px;
+            width: 115px;
+            height: 115px;
+            background-image: url("../images/icons/counter.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__numb{
+        position: relative;
+
+        @include font-700;
+        font-size: 48px;
+        color: $primary;
+    }
+
+    &__text{
+        margin-top: 15px;
+    }
+}

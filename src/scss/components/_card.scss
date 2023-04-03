@@ -1,0 +1,68 @@
+.card{
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 40px 0px rgba(#dcb54e, .4);
+    background: linear-gradient(-100deg, rgba(#06070a, .4) 0%, rgba(#06070a, .8) 100%);
+    border-radius: 36px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        padding: 1px;
+        border-radius: 36px;
+        background: linear-gradient(-190deg, #c1307b, #06070a);
+        -webkit-mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 0;
+    }
+
+    & > * {
+        z-index: 1;
+    }
+}
+
+.card2{
+    position: relative;
+    width: 100%;
+    border-radius: 36px;
+    background-image: url("../images/card/bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        padding: 1px;
+        border-radius: 36px;
+        background: linear-gradient(-100deg, rgba($white, 0.4) 0%, rgba($white, 0.82) 100%);
+        -webkit-mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    & > * {
+        z-index: 1;
+    }
+}
+
+.card3{
+    position: relative;
+    width: 100%;
+    padding: 30px 30px 50px 30px;
+    border-radius: 36px;
+    background: linear-gradient(90deg, rgba(#e231fb, 0.3) 0%, rgba(#7437f4, 0.3) 100%);
+
+    @include media-xs{
+        padding: 30px 15px;
+    }
+}

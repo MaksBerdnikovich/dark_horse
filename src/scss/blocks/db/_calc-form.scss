@@ -1,0 +1,22 @@
+.calc-form{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+
+    &__step1{
+        margin-top: 50px;
+    }
+
+    &__step2{
+        margin-top: 30px;
+    }
+
+    &__step3{
+        margin-top: 30px;
+    }
+
+    &__step4{
+        text-align: center;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,259 @@
+.title-giant{
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 100px;
+    }
+}
+
+.title-xlarge{
+    font-size: 110px;
+    line-height: 120px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 90px;
+    }
+}
+
+.title-large{
+    @include font-700;
+    font-size: 60px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.styled-subtitle{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+h1, .title-h1{
+    @include font-700;
+    font-size: 44px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include media-sm{
+        font-size: 36px;
+    }
+}
+
+h2, .title-h2{
+    @include font-700;
+    font-size: 39px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include media-sm{
+        font-size: 33px;
+    }
+}
+
+h3, .title-h3 {
+    @include font-700;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+h4, .title-h4 {
+    @include font-700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+h5, .title-h5 {
+    @include font-400;
+    font-size: 21px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+h6, .title-h6 {
+    @include font-400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+h1.light, .title-h1.light,
+h2.light, .title-h2.light,
+h3.light, .title-h3.light,
+h4.light, .title-h4.light,
+h5.light, .title-h5.light,
+h6.light, .title-h6.light,
+.title-giant.light,
+.title-xlarge.light,
+.title-large.light,
+.styled-subtitle.light{
+    font-weight: 300 !important;
+}
+
+.title-xlarge.thin,
+.title-large.thin,
+.styled-subtitle.thin{
+    font-weight: 100 !important;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+p.light{
+    font-weight: 300;
+}
+
+b{
+    font-weight: 700;
+}
+
+strong{
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: $transition;
+}
+
+button {
+    cursor: pointer;
+    transition: $transition;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.85;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.body-small{
+    font-size: 16px;
+}
+
+.body-tiny{
+    font-size: 13px;
+}
+
+.tx-uppercase{
+    text-transform: uppercase;
+}
+
+.tx-capitalize{
+    text-transform: capitalize;
+}
+
+.tx-main {
+    color: $font;
+}
+
+.tx-primary {
+    color: $primary;
+}
+
+.tx-secondary {
+    color: $secondary;
+}
+
+.tx-dark {
+    color: $dark;
+}
+
+.tx-white {
+    color: $white;
+}
+
+.tx-success{
+    color: $success;
+}
+
+.tx-danger{
+    color: $danger;
+}
+
+.tx-info{
+    color: $info;
+}
+
+.tx-warning{
+    color: $warning;
+}
+
+.tx-pink{
+    color: $pink;
+}
+
+.tx-blue{
+    color: $blue;
+}
+
+.tx-indigo{
+    color: $indigo;
+}
+
+.tx-purple{
+    color: $purple;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mb-80{
+    margin-bottom: 80px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.bg-none{
+    background-image: none !important;
+    background-color: transparent !important;
+}

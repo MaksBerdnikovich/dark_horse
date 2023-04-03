@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Horse</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Dark Horse">
+    <meta property="og:site_name" content="Dark Horse">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="template" style="background-image: url('dist/images/bg/home.jpg')">
+
+<header class="header" data-sticky>
+    <div class="container">
+        <div class="header__wrap">
+            <div class="header__logo">
+                <a href="index.html"><img src="dist/images/logo/logo-hd.png" alt="logo"></a>
+            </div>
+            <div class="header__info">
+                <nav class="header__menu">
+                    <ul data-menu-nav>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About company</a></li>
+                        <li><a href="to-partners.html">To Partners</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="bonuses.html">Bonuses</a></li>
+                    </ul>
+                    <div class="header__menu-toggle" data-menu-toggle>
+                        <span class="line line--1"></span>
+                        <span class="line line--2"></span>
+                        <span class="line line--3"></span>
+                    </div>
+                </nav>
+                <div class="header__media">
+                    <div class="header__media-item">
+                        <div class="header__socials">
+                            <ul class="socials">
+                                <li class="socials__item"><a href="#"><i class="icon-tg"></i></a></li>
+                                <li class="socials__item"><a href="#"><i class="icon-fb"></i></a></li>
+                                <li class="socials__item"><a href="#"><i class="icon-ins"></i></a></li>
+                                <li class="socials__item"><a href="#"><i class="icon-tw"></i></a></li>
+                                <li class="socials__item"><a href="#"><i class="icon-yo"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__media-item">
+                        <div class="header__board">
+                            <a href="dashboard.html" class="btn btn-primary">
+                                <i class="icon-ava"></i> <span>your dashboard</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+    <section class="wrapper">
+        <section class="hero hero--splash">
+            <div class="hero__content">
+                <div class="container">
+                    <div class="hero__content-wrap">
+                        <div class="hero__content-item">
+                            <div class="hero__content-title">
+                                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h1>
+                            </div>
+                            <div class="hero__content-excerpt">
+                                <p>
+                                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                                    commodo viverra maecenas accumsan lacus vel facilisis.
+                                </p>
+                            </div>
+                            <div class="hero__content-btn">
+                                <a href="#" class="btn btn-secondary"><span>start now</span></a>
+                            </div>
+                        </div>
+                        <div class="hero__content-item">
+                            <div class="hero__content-img content-img--animate">
+                                <img class="img-back" src="dist/images/hero/back.png" alt="back">
+                                <img class="img-horse" src="dist/images/hero/horse.png" alt="horse">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses hero__courses" data-carousel-ticker><ul data-courses></ul></div>
+
+            <div class="hero__counter" data-aos="fade-up">
+                <div class="container container--offset">
+                    <div class="card">
+                        <ul class="counter">
+                            <li>
+                                <div class="counter__wrap">
+                                    <div class="counter__numb"><b data-counter data-to="456" data-stop="0"></b></div>
+                                    <div class="counter__text">Sources of liquidity</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter__wrap">
+                                    <div class="counter__numb">$<b data-counter data-to="4328" data-stop="0"></b>+</div>
+                                    <div class="counter__text">Overall volume</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter__wrap">
+                                    <div class="counter__numb"><b data-counter data-to="4.5" data-stop="0"></b>M+</div>
+                                    <div class="counter__text">Total number of wallets</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="counter__wrap">
+                                    <div class="counter__numb"><b data-counter data-to="45.6" data-stop="0"></b>M+</div>
+                                    <div class="counter__text">General volume trades</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__bg-animation">
+                <ul id="scene" data-friction-x="0.03" data-friction-y="0.05">
+                    <li class="layer" id="specks" data-depth="0.1"></li>
+                    <li class="layer" id="layer-1" data-depth="0.15"><div class="img img-1"></div></li>
+                    <li class="layer" id="layer-2" data-depth="0.25"><div class="img img-2"></div></li>
+                    <li class="layer" id="layer-3" data-depth="0.45"><div class="img img-3"></div></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about about--splash">
+            <div class="container">
+                <div class="about__wrap">
+                    <div class="about__item">
+                        <div class="about__item-img" data-aos="fade-up">
+                            <img src="dist/images/about/1.png" alt="about">
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="page-title" data-aos="fade-up">
+                            <div class="page-title__wrap">
+                                <img src="dist/images/icons/t1.png" alt="title">
+                                <h4><span class="tx-primary">about</span> company</h4>
+                            </div>
+                        </div>
+                        <div class="about__item-txt" data-aos="fade-up">
+                            <p class="tx-primary tx-uppercase body-small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore aliqua.
+                            </p>
+                            <p class="light">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="light">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt....
+                            </p>
+                        </div>
+                        <div class="about__item-btn" data-aos="fade-up">
+                            <a href="#" class="btn btn-primary"><span>more about</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages advantages--splash">
+            <div class="container">
+                <div class="page-title" data-aos="fade-up">
+                    <div class="page-title__wrap">
+                        <img src="dist/images/icons/t2.png" alt="title">
+                        <h4><span class="tx-primary">Our</span> advantages</h4>
+                    </div>
+                </div>
+                <div class="advantages__list">
+                    <ul>
+                        <li data-aos="fade-up">
+                            <div class="advantages__item card">
+                                <div class="advantages__item-img">
+                                    <img src="dist/images/quick/1.png" alt="PRIVATE AND SECURE">
+                                </div>
+                                <div class="advantages__item-txt">
+                                    <h5 class="tx-primary">PRIVATE AND SECURE</h5>
+                                    <p class="light">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <div class="advantages__item card">
+                                <div class="advantages__item-img">
+                                    <img src="dist/images/quick/2.png" alt="PRIORITY SERVICE">
+                                </div>
+                                <div class="advantages__item-txt">
+                                    <h5 class="tx-primary">PRIORITY SERVICE</h5>
+                                    <p class="light">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <div class="advantages__item card">
+                                <div class="advantages__item-img">
+                                    <img src="dist/images/quick/3.png" alt="INSTANT WITHDRAWALS">
+                                </div>
+                                <div class="advantages__item-txt">
+                                    <h5 class="tx-primary">INSTANT WITHDRAWALS</h5>
+                                    <p class="light">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <div class="advantages__item card">
+                                <div class="advantages__item-img">
+                                    <img src="dist/images/quick/4.png" alt="DEDICATED SERVER">
+                                </div>
+                                <div class="advantages__item-txt">
+                                    <h5 class="tx-primary">DEDICATED SERVER</h5>
+                                    <p class="light">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans plans--splash">
+            <div class="container">
+                <div class="page-title title--center" data-aos="fade-up">
+                    <div class="page-title__wrap">
+                        <img src="dist/images/icons/t3.png" alt="title">
+                        <h4><span class="tx-primary">suggestions</span> for you</h4>
+                    </div>
+                </div>
+                <div class="plans__list">
+                    <ul>
+                        <li data-aos="fade-up">
+                            <div class="plans__item item--1">
+                                <div class="plans__item-title">Plan: <span class="tx-styled">1</span></div>
+                                <div class="plans__item-profit">
+                                    <span class="title-large tx-styled">0.3%</span> per day
+                                </div>
+                                <div class="plans__item-period">
+                                    per day for <span class="tx-styled">14 days</span>
+                                </div>
+                                <div class="plans__item-deposit">
+                                    <p>Min. deposit: <span class="tx-styled">1$</span></p>
+                                    <p>Max. deposit: <span class="tx-styled">999$</span></p>
+                                </div>
+                                <div class="plans__item-btn">
+                                    <a href="#" class="btn btn-secondary"><span>invest</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <div class="plans__item item--2">
+                                <div class="plans__item-title">Plan: <span class="tx-styled">2</span></div>
+                                <div class="plans__item-profit">
+                                    <span class="title-large tx-styled">0.5%</span> per day
+                                </div>
+                                <div class="plans__item-period">
+                                    per day for <span class="tx-styled">21 days</span>
+                                </div>
+                                <div class="plans__item-deposit">
+                                    <p>Min. deposit: <span class="tx-styled">1000$</span></p>
+                                    <p>Max. deposit: <span class="tx-styled">9999$</span></p>
+                                </div>
+                                <div class="plans__item-btn">
+                                    <a href="#" class="btn btn-secondary"><span>invest</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <div class="plans__item item--3">
+                                <div class="plans__item-title">Plan: <span class="tx-styled">3</span></div>
+                                <div class="plans__item-profit">
+                                    <span class="title-large tx-styled">0.7%</span> per day
+                                </div>
+                                <div class="plans__item-period">
+                                    per day for <span class="tx-styled">30 days</span>
+                                </div>
+                                <div class="plans__item-deposit">
+                                    <p>Min. deposit: <span class="tx-styled">10000$</span></p>
+                                    <p>Max. deposit: <span class="tx-styled">999999$</span></p>
+                                </div>
+                                <div class="plans__item-btn">
+                                    <a href="#" class="btn btn-secondary"><span>invest</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="calc calc--splash">
+            <div class="container">
+                <div class="page-title" data-aos="fade-up">
+                    <div class="page-title__wrap">
+                        <img src="dist/images/icons/t4.png" alt="title">
+                        <h4><span class="tx-primary">calculator</span> profit</h4>
+                    </div>
+                </div>
+                <form id="calcForm" class="form" method="post" action="">
+                    <div class="form-col calc__plan" data-aos="fade-up" style="z-index: 1;">
+                        <div class="select-group">
+                            <label>Select plan:</label>
+                            <select data-select-calc>
+                                <option value="0.3" data-val="500" data-min="1" data-max="999" data-total="14" selected>
+                                    Plan: 1 (0.3% per day)
+                                </option>
+                                <option value="0.5" data-val="4000" data-min="1000" data-max="9999" data-total="21">
+                                    Plan: 2 (0.5% per day)
+                                </option>
+                                <option value="0.7" data-val="80000" data-min="10000" data-max="99999" data-total="30">
+                                    Plan: 3 (0.7% per day)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-col calc__amount" data-aos="fade-up">
+                        <label>Enter amount:</label>
+                        <div class="calc__amount-wrap">
+                            <div class="input-group">
+                                <input type="number" value="1000.00" data-calc-amount>
+                                <span class="error-text">Enter correct amount</span>
+                            </div>
+                            <div class="slider-group" data-slider>
+                                <div class="ui-slider-handle" data-slider-handle></div>
+                                <div class="ui-slider-scale">
+                                    <ul>
+                                        <li data-slider-min>$10001.00</li>
+                                        <li data-slider-max>$10001.00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-col form-col--100" data-aos="fade-up">
+                        <div class="calc__result">
+                            <ul>
+                                <li><span>Daily profit</span> <b data-calc-daily>$1568.00</b></li>
+                                <li><span>Total profit</span> <b data-calc-total>$27940.00</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-col form-col--100" data-aos="fade-up">
+                        <div class="calc__btn">
+                            <button type="submit" class="btn btn-secondary" data-calc-submit><span>invest now</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="ecosystem ecosystem--splash">
+            <div class="container">
+                <div class="page-title" data-aos="fade-up">
+                    <div class="page-title__wrap">
+                        <img src="dist/images/icons/t5.png" alt="title">
+                        <h4><span class="tx-primary">Grow with </span> our ecosystem</h4>
+                    </div>
+                </div>
+                <div class="ecosystem__desc" data-aos="fade-up">
+                    <p>Build solutions alongside decentralized finance leaders</p>
+                </div>
+                <div class="ecosystem__list">
+                    <ul>
+                        <li data-aos="fade-up">
+                            <div class="ecosystem__item card">
+                                <div class="ecosystem__item-txt">
+                                    <h5 class="tx-primary">Dark horse API</h5>
+                                    <p class="light">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore
+                                    </p>
+                                </div>
+                                <div class="ecosystem__item-img">
+                                    <img src="dist/images/system/1.png" alt="Dark horse API">
+                                </div>
+                                <div class="ecosystem__item-btn">
+                                    <a href="#" class="btn btn-primary"><span>Learn more</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up">
+                            <div class="ecosystem__item card">
+                                <div class="ecosystem__item-txt">
+                                    <h5 class="tx-primary">Dark horse grant program</h5>
+                                    <p class="light">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore
+                                    </p>
+                                </div>
+                                <div class="ecosystem__item-img">
+                                    <img src="dist/images/system/2.png" alt="Dark horse grant program">
+                                </div>
+                                <div class="ecosystem__item-btn">
+                                    <a href="#" class="btn btn-primary"><span>Learn more</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="referral referral--splash">
+            <div class="container">
+                <div class="referral__wrap">
+                    <div class="referral__item">
+                        <div class="page-title" data-aos="fade-up">
+                            <div class="page-title__wrap">
+                                <img src="dist/images/icons/t6.png" alt="title">
+                                <h4><span class="tx-primary">Referral</span> system</h4>
+                            </div>
+                        </div>
+                        <div class="referral__item-txt">
+                            <p class="title-h2 tx-primary" data-aos="fade-up">7% - 2% - 1% - 0.3% - 0.1%</p>
+                            <p class="light" data-aos="fade-up">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="light" data-aos="fade-up">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt....
+                            </p>
+                        </div>
+                    </div>
+                    <div class="referral__item" data-aos="fade-up">
+                        <div class="referral__item-img">
+                            <img src="dist/images/system/4.png" alt="Referral system">
+                            <span class="number number--1">7%</span>
+                            <span class="number number--2">2%</span>
+                            <span class="number number--3">1%</span>
+                            <span class="number number--4">0.3%</span>
+                            <span class="number number--5">0.1%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="referral__btn" data-aos="fade-up">
+                    <a href="#" class="btn btn-primary"><span>Invite a partner</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="networks networks--splash">
+            <div class="container">
+                <div class="page-title" data-aos="fade-up">
+                    <div class="page-title__wrap">
+                        <img src="dist/images/icons/t7.png" alt="title">
+                        <h4><span class="tx-primary">Optimize your trades across hundreds</span><br/>of DEXes on multiple networks</h4>
+                    </div>
+                </div>
+                <div class="networks__list">
+                    <ul>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/1.png" alt="binance"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/2.png" alt="coinmarket"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/3.png" alt="coinbase"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/4.png" alt="kraken"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/5.png" alt="kucoin"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/6.png" alt="gate"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/7.png" alt="huobi"></a></li>
+                        <li data-aos="fade-up"><a href="#"><img src="dist/images/network/8.png" alt="bitfinex"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__infobox">
+                <div class="footer__infobox-item infobox-item--start">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="about.html">About company</a></li>
+                            <li><a href="bonuses.html">Bonuses</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li><a href="terms.html">Terms of use</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="registration.html">To the registration page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__infobox-logo">
+                    <a href="index.html"><img src="dist/images/logo/logo-ft.png" alt="logo"></a>
+                </div>
+                <div class="footer__infobox-item infobox-item--end">
+                    <div class="footer__socials">
+                        <ul class="socials">
+                            <li class="socials__item"><a href="#"><i class="icon-tg"></i></a></li>
+                            <li class="socials__item"><a href="#"><i class="icon-fb"></i></a></li>
+                            <li class="socials__item"><a href="#"><i class="icon-ins"></i></a></li>
+                            <li class="socials__item"><a href="#"><i class="icon-tw"></i></a></li>
+                            <li class="socials__item"><a href="#"><i class="icon-yo"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__board">
+                        <a href="#" class="btn btn-primary">
+                            <i class="icon-ava"></i> <span>your dashboard</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__colophon">
+                <div class="payments">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/1.png" alt="btc"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/2.png" alt="eth"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/3.png" alt="bnb"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/4.png" alt="tron"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/5.png" alt="ripple"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/6.png" alt="doge"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/7.png" alt="trc20"></a></li>
+                        <li><a href="javascript:void(0)"><img src="dist/images/pays/8.png" alt="erc20"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__copy">"Dark horse" all rights reserved © 2023</div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<aside class="scroll-to-top" data-scroll-to-top>
+    <a href="javascript:void(0)" class="btn btn-primary"><i class="icon-arrow-input"></i></a>
+</aside>
+
+<style>
+    .referral__item-img{
+        position: relative;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    .referral__item-img .number{
+        position: absolute;
+        font-family: 'Play';
+        font-weight: 700;
+        line-height: 1;
+        color: #ffffff;
+        text-shadow:
+            0px 3px 0px rgba(255,255,255,0.15),
+            0px 14px 10px rgba(0,0,0,0.15),
+            20px 24px 6px rgba(0,0,0,0.1),
+            0px 34px 30px rgba(0,0,0,0.1);
+    }
+    .referral__item-img .number--1{
+        left: 55px;
+        top: 55px;
+        font-size: 100px;
+    }
+    .referral__item-img .number--2{
+        right: 210px;
+        top: 10px;
+        font-size: 75px;
+    }
+    .referral__item-img .number--3{
+        right: 90px;
+        top: 150px;
+        font-size: 70px;
+    }
+    .referral__item-img .number--4{
+        left: 130px;
+        bottom: 65px;
+        font-size: 60px;
+    }
+    .referral__item-img .number--5{
+        right: 150px;
+        bottom: 105px;
+        font-size: 40px;
+    }
+    @media only screen and (max-width: 767px){
+        .referral__item-img .number--1{
+            font-size: 70px;
+        }
+        .referral__item-img .number--2{
+            right: 130px;
+            top: 30px;
+            font-size: 60px;
+        }
+        .referral__item-img .number--3{
+            top: 90px;
+            right: 70px;
+            font-size: 40px;
+        }
+        .referral__item-img .number--4{
+            left: 80px;
+            bottom: 90px;
+            font-size: 30px;
+        }
+        .referral__item-img .number--5{
+            right: 130px;
+            bottom: 125px;
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 479px){
+        .referral__item-img .number--1{
+            font-size: 60px;
+            left: 0;
+        }
+        .referral__item-img .number--2{
+            right: 100px;
+            font-size: 40px;
+        }
+        .referral__item-img .number--3{
+            right: 30px;
+            font-size: 30px;
+        }
+        .referral__item-img .number--4{
+            left: 40px;
+            bottom: 60px;
+            font-size: 20px;
+        }
+        .referral__item-img .number--5{
+            right: 70px;
+            bottom: 60px;
+            font-size: 18px;
+        }
+    }
+</style>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+<!-- Calculator Profit -->
+<script>
+    $('[data-select-calc]').selectric({
+        labelBuilder: function(currItem) {
+            return `<span style="color: #55caff;">Plan: ${currItem.index + 1}</span> (${currItem.value}% per day)`
+        },
+    });
+
+    const amountCheck = (val, min, max) => {
+        if (val > max || val < min){
+            $('[data-calc-amount]').addClass('error').next('.error-text').show()
+            $('[data-calc-submit]').attr('disabled', true)
+        } else {
+            $('[data-calc-amount]').removeClass('error').next('.error-text').hide()
+            $('[data-calc-submit]').attr('disabled', false)
+        }
+    }
+
+    const calcDailyProfit = (amount, percent) => {
+        const result = parseFloat(amount) + (parseFloat(amount) / 100 * parseFloat(percent))
+        $('[data-calc-daily]').html(`$ ${result.toFixed(2)}`)
+    }
+
+    const calcTotalProfit = (amount, percent, total) => {
+        const result = parseFloat(amount) + ((parseFloat(amount) / 100 * parseFloat(percent)) * parseFloat(total))
+        $('[data-calc-total]').html(`$ ${result.toFixed(2)}`)
+    }
+
+    const handlerPosFix = (min) => {
+        if (min > 999) {
+            $("[data-slider-handle] > span").css('left', '-6px')
+        }
+
+        if (min > 9999) {
+            $("[data-slider-handle] > span").css('left', '-12px')
+        }
+    }
+
+    const calculate = (
+        val = $('[data-select-calc] option:selected').data('val'),
+        min = $('[data-select-calc] option:selected').data('min'),
+        max = $('[data-select-calc] option:selected').data('max'),
+        total = $('[data-select-calc] option:selected').data('total'),
+        percent = $('[data-select-calc]').val(),
+    ) => {
+        $("[data-slider]").slider({
+            step: 1,
+            range: 'min',
+            min: min,
+            max: max,
+            'value': val,
+            slide: function(event, ui) {
+                $("[data-slider-handle]").html(`<span>$ ${ui.value}</span>`)
+                $('[data-calc-amount]').val(ui.value)
+
+                amountCheck(ui.value, min, max)
+                calcDailyProfit(ui.value, percent)
+                calcTotalProfit(ui.value, percent, total)
+                handlerPosFix(min)
+            }
+        })
+        $("[data-slider-handle]").html(`<span>$ ${val}</span>`)
+        $('[data-slider-min]').html('$' + min)
+        $('[data-slider-max]').html('$' + max)
+        $('[data-calc-amount]').val(val)
+
+        calcDailyProfit(val, percent)
+        calcTotalProfit(val, percent, total)
+        handlerPosFix(min)
+    }
+    calculate()
+
+    // change plan
+    $('[data-select-calc]').on('change', () => calculate())
+
+    // change amount
+    $('[data-calc-amount]').on('keyup', (e) => {
+        const val = $(e.target).val()
+        const min = $('[data-select-calc] option:selected').data('min')
+        const max = $('[data-select-calc] option:selected').data('max')
+
+        amountCheck(val, min, max)
+        if (val < max && val > min) calculate(val)
+    })
+</script>
+
+<!-- Courses Get Data -->
+<script>
+    const $courses = $('[data-courses]')
+    const symbols = [
+        'BTC/USDT', 'ETH/USDT', 'LTC/USDT', 'TRX/USDT', 'ERC20/USDT', 'TRC20/USDT', 'DOGE/USDT', 'XRP/USDT',
+        'DASH/USDT', 'BNB/USDT', 'ETH/BTC', 'EUR/USDT'
+    ]
+    const getCoursesData = () => {
+        fetch(`https://api.binance.com/api/v3/ticker/24hr`)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let result = ''
+                data.forEach((course) => {
+                    symbols.forEach((smb) => {
+                        if (course.symbol === smb.replace('/', '')){
+                            const symbol = smb.slice(0, -1)
+                            const percent = parseFloat(course.priceChangePercent).toFixed(2) + '%'
+                            const priceChange = parseFloat(course.priceChange).toFixed(2)
+                            const price = parseFloat(course.lastPrice).toFixed(2)
+                            const state = parseFloat(course.priceChange) < 0 ? 'down' : 'up'
+                            result += `<li class="courses__item">${symbol} ${price} <span class="item--${state}">(${percent}) ${priceChange}</span></li>`
+                        }
+                    })
+                })
+
+                $courses.append(result)
+
+                $('[data-carousel-ticker]').carouselTicker({
+                    speed: 1,
+                    delay: 30,
+                    direction: "prev",
+                    mode: "horizontal",
+                    onCarouselTickerLoad: function () {},
+                });
+            });
+    }
+    getCoursesData()
+</script>
+
+<!-- Parallax Twinkle Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    const scene = $('#scene').get(0)
+    const parallaxInstance = new Parallax(scene)
+    const speed = 400
+
+    for (let i = 1; i < 6; i++) {
+        twinkleLoop(i);
+    }
+
+    function twinkleLoop(i) {
+        let duration = ((Math.random() * 5) + 3)
+
+        duration = duration - ((495 - speed)/100)
+        twinkle(i, duration)
+
+        setTimeout(function() {
+            twinkleLoop(i)
+        }, duration * 1000);
+    }
+
+    function twinkle(id, duration) {
+        const top = (Math.floor(Math.random() * 85) + 0) + '%';
+        const left = (Math.floor(Math.random() * 85) + 0) + '%';
+
+        $('#speck' + id).remove();
+        $('#specks').append("<div class='speck' id='speck" + id + "'></div>")
+        $('#speck' + id).css({
+            'top': top,
+            'left': left,
+            'animation-duration': duration + 's',
+            'animation-timing-function': 'cubic-bezier(0.250, 0.250, 0.750, 0.750)',
+            'animation-name': 'twinkle',
+        })
+    }
+</script>
+
+</body>
+</html>

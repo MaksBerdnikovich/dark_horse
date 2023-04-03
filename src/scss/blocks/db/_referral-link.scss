@@ -1,0 +1,75 @@
+.referral-link{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    min-height: 140px;
+    padding: 20px 40px;
+
+    @include media-sm{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    &__icon{
+        margin-right: 40px;
+
+        @include media-sm{
+            margin: 0;
+        }
+    }
+
+    &__area{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        z-index: 1;
+
+        @include media-sm{
+            width: 100%;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        label{
+            font-size: 16px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .input-group{
+            display: flex;
+            flex: 1 1 auto;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+
+            @include media-sm{
+                flex-direction: column;
+            }
+
+            input{
+                max-width: 750px;
+                color: $cyan;
+                font-size: 16px;
+
+                @include media-sm{
+                    min-width: 100%;
+                }
+            }
+
+            .btn{
+                margin-left: 40px;
+                min-width: 150px;
+
+                @include media-sm{
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

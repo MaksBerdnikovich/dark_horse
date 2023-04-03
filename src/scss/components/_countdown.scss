@@ -1,0 +1,12 @@
+.timer{
+    position: relative;
+    display: flex;
+
+    li{
+        text-align: center;
+    }
+
+    li.sep{
+        padding: 0 5px;
+    }
+}

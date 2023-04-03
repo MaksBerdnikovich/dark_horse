@@ -1,0 +1,86 @@
+.ui-datepicker{
+    font-family: 'Roboto';
+    background-color: #06070a;
+    border-color: #06070a !important;
+
+    .ui-widget-header{
+        background-color: rgba(#ffffff, 0.2);
+        border-color: #06070a !important;
+        color: #FFFFFF;
+    }
+
+    .ui-widget-header .ui-datepicker-prev,
+    .ui-widget-header .ui-datepicker-next{
+        background-color: transparent !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:before{
+            font-family: 'icons';
+            content: "\e910";
+            font-size: 6px;
+            color: #FFFFFF;
+            font-weight: normal;
+        }
+    }
+
+    .ui-widget-header .ui-datepicker-prev-hover{
+        border: 0;
+        left: 0px;
+        top: 2px;
+    }
+    .ui-widget-header .ui-datepicker-next-hover{
+        border: 0;
+        right: 0px;
+        top: 2px;
+    }
+
+    .ui-widget-header .ui-datepicker-prev:before{
+        transform: rotate(90deg);
+    }
+    .ui-widget-header .ui-datepicker-next:before{
+        transform: rotate(-90deg);
+    }
+
+    .ui-widget-header .ui-datepicker-prev span,
+    .ui-widget-header .ui-datepicker-next span {
+        display: none;
+    }
+
+    .ui-datepicker-calendar {
+        background-color: #06070a;
+        border-color: #06070a !important;
+        color: #FFFFFF;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button, html .ui-button.ui-state-disabled:hover{
+        background-color: #06070a;
+        border-color: #06070a !important;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active, .ui-button:active,
+    .ui-button.ui-state-active:hover {
+        border: 1px solid #7437f4;
+        background: #7437f4;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+
+    .ui-state-highlight,
+    .ui-widget-content .ui-state-highlight,
+    .ui-widget-header .ui-state-highlight {
+        border: 1px solid #e231fb;
+        background: #e231fb;
+        color: #FFFFFF;
+    }
+}

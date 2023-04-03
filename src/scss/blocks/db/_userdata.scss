@@ -1,0 +1,88 @@
+.userdata{
+    position: relative;
+    max-width: 100%;
+
+    .grid__item{
+        @include media-md{
+            margin-top: 30px;
+        }
+
+        @include media-sm{
+            margin-top: 20px;
+        }
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 140px;
+
+        .desc{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    &__item.item--big{
+        padding: 20px 40px;
+
+        @include media-md{
+            padding: 20px;
+        }
+
+        .icon{
+            margin-right: 40px;
+
+            @include media-md{
+                margin-right: 20px;
+            }
+        }
+
+        span{
+            font-size: 18px;
+            font-weight: 400;
+            padding: 5px 0;
+        }
+
+        .title-h3{
+            font-size: 36px;
+        }
+
+        .title-h4{
+            text-transform: none;
+
+            @include media-xs{
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__item.item--small{
+        padding: 20px;
+        background-image: url("../images/bg/card-sm.png");
+
+        @include media-sm{
+            background-image: url("../images/card/bg.png");
+        }
+
+        .icon{
+            margin-right: 20px;
+        }
+
+        span{
+            font-size: 14px;
+            font-weight: 400;
+            padding: 5px 0;
+        }
+
+        .title-h4{
+            font-size: 18px;
+        }
+    }
+
+    .deposit{
+        margin-top: 38px;
+    }
+}

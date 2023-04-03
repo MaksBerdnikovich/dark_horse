@@ -1,0 +1,121 @@
+.partners{
+    position: relative;
+    margin-top: 80px;
+
+    @include media-sm{
+        padding-bottom: 40px;
+    }
+
+    &__tabs{
+        margin-top: 50px;
+    }
+
+    &__tabs-nav{
+        li{
+            margin-bottom: 0;
+        }
+
+        li + li{
+            @include media-sm{
+                margin-top: 20px;
+            }
+        }
+
+        a{
+            font-size: 14px;
+            font-weight: 400;
+
+            @include media-md{
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__tabs-body{
+        padding: 0;
+    }
+
+    .table{
+        margin-top: 40px;
+    }
+}
+
+.partners-data{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 285px;
+    border: 0;
+
+    @media only screen and (min-width: 1200px){
+        background: none;
+
+        &:after{
+            display: none;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 390px;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+
+        &.step--1:before{
+            background-image: url("../images/new/tr1.png");
+        }
+
+        &.step--2:before{
+            background-image: url("../images/new/tr2.png");
+        }
+
+        &.step--3:before{
+            background-image: url("../images/new/tr3.png");
+        }
+    }
+}
+
+.partners-data .desc{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & + .desc {
+        margin-top: 15px;
+    }
+
+    span{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px 0;
+        line-height: 1.5;
+    }
+}
+
+.partners-data .progress{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    margin-top: 10px;
+    background-color: $dark;
+    border-radius: $corner;
+    overflow: hidden;
+
+    .progress-line{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+
+        @include gradient(#dcb54e, #c1307b);
+    }
+}

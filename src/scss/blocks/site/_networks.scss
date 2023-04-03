@@ -1,0 +1,54 @@
+.networks{
+    position: relative;
+
+    &.networks--splash{
+        padding-top: 200px;
+
+        @include media-mdx{
+            padding-top: 150px;
+        }
+
+        @include media-sm{
+            padding-top: 100px;
+        }
+    }
+
+    .page-title{
+        padding-bottom: 20px;
+    }
+
+    &__list {
+        position: relative;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 -15px;
+        }
+
+        li{
+            padding: 0 15px;
+            margin-top: 30px;
+            width: 25%;
+
+            @include media-sm{
+                width: 50%;
+            }
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+
+        a{
+            display: flex;
+            max-width: 270px;
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

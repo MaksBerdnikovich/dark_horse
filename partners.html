@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Horse</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Dark Horse">
+    <meta property="og:site_name" content="Dark Horse">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="dashboard">
+
+<header class="header">
+    <div class="header__list">
+        <ul>
+            <li>
+                <i><img src="dist/images/icons/user.png" alt="Welcome"></i>
+                <p>
+                    <span class="body-tiny">Welcome:</span>
+                    <b class="title-h6">Username_38262577</b>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta1.png" alt="Last entrance"></i>
+                <p>
+                    <span class="body-tiny">Last entrance:</span>
+                    <span class="tx-primary">12-12-2021 <span class="time">23:00</span></span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta2.png" alt="Last login with IP"></i>
+                <p>
+                    <span class="body-tiny">Last login with IP:</span>
+                    <span class="tx-primary">23.456.78.90</span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta3.png" alt=" Invited you"></i>
+                <p>
+                    <span class="body-tiny">Invited you:</span>
+                    <span class="tx-primary">Username_236561454</span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta4.png" alt="Your referral link"></i>
+                <p>
+                    <span class="body-tiny">Your referral link:</span>
+                    <a href="javascript:void(0)" data-clipboard data-clipboard-text="https://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4">
+                        <code>https://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4</code>
+                        <i class="icon-copy" data-clipboard-confirm></i>
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main-content">
+    <nav class="navigation">
+        <div class="navigation__logo">
+            <a href="index.html"><img src="dist/images/logo/logo-hd.png" alt="logo"></a>
+        </div>
+
+        <nav class="navigation__menu" data-menu-nav>
+            <ul>
+                <li><a href="dashboard.html"><span>Dashboard</span><i class="icon-menu-1"></i></a></li>
+                <li><a href="deposits.html"><span>my deposits</span><i class="icon-menu-2"></i></a></li>
+                <li><a href="transactions.html"><span>transactions</span><i class="icon-menu-3"></i></a></li>
+                <li><a href="partners.html" class="active"><span>partners</span><i class="icon-menu-4"></i></a></li>
+                <li><a href="settings.html"><span>settings</span><i class="icon-menu-5"></i></a></li>
+                <li><a href="#"><span>log out</span><i class="icon-menu-6"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="navigation__menu-toggle" data-menu-toggle>
+            <span class="line line--1"></span>
+            <span class="line line--2"></span>
+            <span class="line line--3"></span>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="statistics">
+            <div class="carousel" data-stats-carousel>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/1.png" alt="btc">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. BTC</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. BTC</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. BTC</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/2.png" alt="eth">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. ETH</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. ETH</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. ETH</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/3.png" alt="bnb">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. BNB</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. BNB</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. BNB</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/4.png" alt="tron">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. TRON</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. TRON</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. TRON</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/5.png" alt="xrp">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. XRP</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. XRP</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. XRP</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/6.png" alt="doge">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. DOGE</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. DOGE</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. DOGE</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/7.png" alt="trc20">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. USDT</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/8.png" alt="erc20">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. USDT</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu">
+            <div class="page-title-db">
+                <div class="page-title-db__wrap">
+                    <i><img src="dist/images/icons/menu-4.svg" alt="title"></i>
+                    <h2>partners</h2>
+                </div>
+            </div>
+
+            <div class="submenu__list">
+                <a href="balance.html" class="btn btn-primary">top up balance</a>
+                <a href="deposits-open.html" class="btn btn-secondary btn-small">open deposit</a>
+                <a href="withdraw.html" class="btn btn-styled">withdraw</a>
+            </div>
+        </div>
+
+        <div class="referral-link card2">
+            <div class="referral-link__icon">
+                <img src="dist/images/icons/db13.png" alt="Your referral link">
+            </div>
+            <div class="referral-link__area">
+                <label>Your referral link:</label>
+                <div class="input-group">
+                    <input type="text" id="refLink" value="hhttps://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4" readonly/>
+                    <a href="javascript:void(0)" data-clipboard data-clipboard-target="#refLink" class="btn btn-primary">
+                        <i class="icon-copy2"></i> <span>Copy link</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="userdata">
+            <div class="grid">
+                <div class="grid__item grid-item--50 mt-30 tablet-100">
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db11.png" alt="Referral link clicks">
+                        </div>
+                        <div class="desc">
+                            <span>Referral link clicks:</span>
+                            <b class="title-h4 tx-primary">32478</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--50 mt-30 tablet-100">
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db12.png" alt="Structure turnover">
+                        </div>
+                        <div class="desc">
+                            <span>Structure turnover:</span>
+                            <b class="title-h4 tx-primary">324783.34 USDT</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--50 mt-30 tablet-100">
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db7.png" alt="Total active partners">
+                        </div>
+                        <div class="desc">
+                            <span>Total active partners:</span>
+                            <b class="title-h4 tx-primary">324</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--50 mt-30 tablet-100">
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db6.png" alt="Earned referrals">
+                        </div>
+                        <div class="desc">
+                            <span>Earned referrals:</span>
+                            <b class="title-h4 tx-primary">324783.34 USD</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--33 mt-30 tablet-100">
+                    <div class="partners-data step--1 card2">
+                        <div class="desc">
+                            <span>Your turnover:</span>
+                            <b class="title-h4 tx-purple">24 783.34 USD</b>
+                        </div>
+                        <div class="desc">
+                            <span>Your last bonus:</span>
+                            <b class="title-h4 tx-primary">750$</b>
+                        </div>
+                        <div class="desc">
+                            <span>Your referral program</span>
+                            <b class="title-h4 tx-primary">7%-4%-3%-1%-0.5%</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--33 mt-30 tablet-100">
+                    <div class="partners-data step--2 card3">
+                        <div class="desc">
+                            <span>To receive a bonus, you must:</span>
+                            <b class="title-h4 tx-primary">25 216,66 USD</b>
+                            <div class="progress"><div class="progress-line" style="width: 80%"></div></div>
+                        </div>
+                        <div class="desc">
+                            <span>To receive the next referral <br/> percentage, you must:</span>
+                            <b class="title-h4 tx-primary">25 216,66 USD</b>
+                            <div class="progress"><div class="progress-line" style="width: 50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--33 mt-30 tablet-100">
+                    <div class="partners-data step--3 card2">
+                        <div class="desc">
+                            <span>Your next bonus:</span>
+                            <b class="title-h4 tx-primary">2000$</b>
+                        </div>
+                        <div class="desc">
+                            <span>Your next referral program</span>
+                            <b class="title-h4 tx-primary">9%-5%-4%-2%-1%</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners">
+            <div class="page-title">
+                <div class="page-title__wrap">
+                    <img src="dist/images/icons/t3.png" alt="title">
+                    <h4><span class="tx-primary">suggestions</span> for you</h4>
+                </div>
+            </div>
+
+            <div class="partners__tabs tabs" data-tab>
+                <div class="partners__tabs-nav tabs__nav">
+                    <ul>
+                        <li><a href="#tab1" class="card2" data-tab-nav>Tier 1 Partners</a></li>
+                        <li><a href="#tab2" class="card2" data-tab-nav>Tier 2 Partners</a></li>
+                        <li><a href="#tab3" class="card2" data-tab-nav>Tier 3 Partners</a></li>
+                        <li><a href="#tab4" class="card2" data-tab-nav>Tier 4 Partners</a></li>
+                        <li><a href="#tab5" class="card2" data-tab-nav>Tier 5 Partners</a></li>
+                    </ul>
+                </div>
+                <div id="tab1" class="partners__tabs-body tabs__body" data-tab-body>
+                    <div class="table item">
+                        <table>
+                            <thead class="card3">
+                            <tr>
+                                <th>Login</th>
+                                <th>Date of registration</th>
+                                <th>E-mail</th>
+                                <th>Deposit amount</th>
+                                <th>Referral rewards</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li class="pagination__prev"><a href="#"><i class="icon-left-arrow"></i></a></li>
+                            <li><a href="#"><i class="icon-pagi-1"></i></a></li>
+                            <li><a href="#" class="active"><i class="icon-pagi-1"></i></a></li>
+                            <li><a href="#"><i class="icon-pagi-1"></i></a></li>
+                            <li class="pagination__next"><a href="#"><i class="icon-right-arrow"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tab2" class="partners__tabs-body tabs__body" data-tab-body>
+                    <div class="table item">
+                        <table>
+                            <thead class="card3">
+                            <tr>
+                                <th>Login</th>
+                                <th>Date of registration</th>
+                                <th>E-mail</th>
+                                <th>Deposit amount</th>
+                                <th>Referral rewards</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab3" class="partners__tabs-body tabs__body" data-tab-body>
+                    <div class="table item">
+                        <table>
+                            <thead class="card3">
+                            <tr>
+                                <th>Login</th>
+                                <th>Date of registration</th>
+                                <th>E-mail</th>
+                                <th>Deposit amount</th>
+                                <th>Referral rewards</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab4" class="partners__tabs-body tabs__body" data-tab-body>
+                    <div class="table item">
+                        <table>
+                            <thead class="card3">
+                            <tr>
+                                <th>Login</th>
+                                <th>Date of registration</th>
+                                <th>E-mail</th>
+                                <th>Deposit amount</th>
+                                <th>Referral rewards</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="td--login">Username_45436734h545</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            <tr>
+                                <td class="td--login">Username_454</td>
+                                <td class="td--date">20.08.2022 <span class="time">14:45</span></td>
+                                <td class="td--email"><a href="#">Username_45436734h545@gmail.com</a></td>
+                                <td class="td--amount">32424.32</td>
+                                <td class="td--ref">24.32</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab5" class="partners__tabs-body tabs__body" data-tab-body></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar">
+        <div class="sidebar__block">
+            <h4 class="sidebar__title"><span class="tx-primary">last</span> operations</h4>
+
+            <ul class="sidebar__operations">
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/btc.png" alt="btc"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/eth.png" alt="eth"></i>
+                        <p>
+                            <span class="tx-primary">Withdrawals</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--down"><span>-32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/bnb.png" alt="bnb"></i>
+                        <p>
+                            <span class="tx-primary">Withdrawals</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/tron.png" alt="tron"></i>
+                        <p>
+                            <span class="tx-primary">Replenishment</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/ripple.png" alt="ripple"></i>
+                        <p>
+                            <span class="tx-primary">Referral</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--down"><span>-32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/doge.png" alt="doge"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/trc20.png" alt="trc20"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar__block">
+            <h4 class="sidebar__title"><span class="tx-primary">latest</span> reviews</h4>
+
+            <ul class="sidebar__reviews">
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate...
+                            </p>
+                        </div>
+                        <div class="sidebar__reviews-item-link"><a href="#">More</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__socials">
+            <ul class="socials">
+                <li class="socials__item"><a href="#"><i class="icon-tg"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-fb"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-ins"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-tw"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-yo"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__copy">"Dark horse" all rights reserved © 2023</div>
+    </div>
+</footer>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

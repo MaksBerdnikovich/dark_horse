@@ -1,0 +1,41 @@
+.deposits{
+    position: relative;
+    margin-top: 50px;
+
+    &__tabs-nav{
+        li{
+            margin-bottom: 0;
+        }
+
+        li + li{
+            @include media-sm{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__tabs-body{
+        padding: 0;
+    }
+
+    &__list {
+        .grid{
+            margin: 0 -20px;
+        }
+
+        .grid__item{
+            padding: 0 20px;
+            margin-top: 40px;
+
+            @include media-md{
+                width: 100%;
+            }
+        }
+    }
+
+    .owl-carousel .owl-nav{
+        @include media-lgx{
+            margin: 60px 0 30px 0;
+        }
+    }
+}

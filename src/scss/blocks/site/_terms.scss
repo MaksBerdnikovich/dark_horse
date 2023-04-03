@@ -1,0 +1,41 @@
+.terms {
+    position: relative;
+
+    &__text {
+        position: relative;
+        padding-top: 100px;
+
+        p + p {
+            margin-top: 15px;
+        }
+    }
+
+    &__grid-item-title{
+        @include font-700;
+        font-size: 22px;
+        text-transform: uppercase;
+
+        span{
+            padding-right: 5px;
+        }
+    }
+
+    &__grid-item-list{
+        margin-top: 30px;
+        padding: 0 0 0 30px;
+        list-style-type: none;
+
+        @include media-sm{
+            padding-left: 0;
+        }
+
+        li{
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        li + li{
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.header{
+    position: relative;
+    width: 100%;
+    padding-left: 190px;
+    padding-right: 20px;
+    order: 0;
+    z-index: 1;
+
+    @include media-lg{
+        padding-left: 150px;
+    }
+
+    @include media-md{
+        padding-left: 110px;
+    }
+
+    @include media-xs{
+        padding-left: 20px;
+    }
+
+    &__list{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 60px;
+        padding: 0 50px 0 95px;
+        overflow: hidden;
+
+        @include media-lgx{
+            padding: 0 50px;
+        }
+
+        @include media-sm{
+            padding: 100px 50px 20px 50px;
+        }
+
+        @include media-xs{
+            padding: 60px 20px 20px 100px;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/db/hd.png");
+            background-repeat: no-repeat;
+            background-position: left 10px;
+            z-index: 0;
+            border-radius: 16px;
+
+            @include media-sm{
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+
+        ul{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0 -45px;
+            z-index: 1;
+
+            /*
+            @include media-lgx{
+                width: 1700px;
+                overflow: auto;
+                @include scrollbar(4px);
+            }
+             */
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 0 45px;
+
+            @include media-lgx{
+                &:nth-child(5){
+                    display: none;
+                }
+            }
+
+            @include media-lg{
+                &:nth-child(4){
+                    display: none;
+                }
+            }
+
+            @include media-md{
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+
+            @include media-sm{
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+
+        i{
+            margin-right: 15px;
+
+            @include media-xs{
+                display: none;
+            }
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+        }
+
+        span.body-tiny{
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        span.copied{
+            opacity: 0;
+            padding-left: 5px;
+            color: $primary;
+            transition: $transition;
+
+            &.active{
+                opacity: 1;
+            }
+        }
+
+        span.tx-primary{
+            @include font-400;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        span.time{
+            padding-left: 5px;
+        }
+
+        .title-h6{
+            @include font-700;
+            font-size: 18px;
+            color: $pink;
+            text-transform: none;
+
+            @include media-sm{
+                font-size: 15px;
+            }
+        }
+
+        a{
+            position: relative;
+            display: inline-flex;
+            align-items: flex-end;
+            color: $cyan;
+            white-space: nowrap;
+
+            code{
+                @include font-400;
+                font-size: 13px;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                i{
+                    color: $yellow;
+                }
+            }
+
+            i.icon-copy{
+                position: absolute;
+                display: inline-flex;
+                margin: 0;
+                padding: 0;
+                top: -10px;
+                right: -30px;
+                font-size: 26px;
+                transition: $transition;
+            }
+
+            i.icon-copy.active{
+                color: $pink;
+            }
+        }
+    }
+}

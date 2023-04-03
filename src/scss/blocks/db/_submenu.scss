@@ -1,0 +1,37 @@
+.submenu{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media-md{
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    &__list{
+        position: relative;
+
+        @include media-md{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        @include media-sm{
+            flex-direction: column;
+        }
+
+        a{
+            margin-left: 10px;
+
+            @include media-md{
+                margin-bottom: 30px;
+            }
+
+            @include media-sm{
+                margin-left: 0;
+            }
+        }
+    }
+}

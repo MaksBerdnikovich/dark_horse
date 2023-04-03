@@ -1,0 +1,25 @@
+.socials{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -10px;
+
+    li{
+        padding: 0 10px;
+    }
+
+    a {
+        position: relative;
+        color: rgba($white, 0.3);
+        font-size: 14px;
+
+        &:hover{
+            color: $white;
+        }
+
+        .icon-ins{
+            font-size: 15px;
+        }
+    }
+}

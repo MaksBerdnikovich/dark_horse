@@ -1,0 +1,38 @@
+.payments{
+    position: relative;
+
+    ul{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -15px;
+    }
+
+    li{
+        margin: 20px 0;
+
+        @include media-mdx{
+            width: 25%;
+        }
+
+        @include media-sm{
+            margin-top: 0;
+        }
+    }
+
+    a{
+        display: flex;
+
+        @include media-mdx{
+            justify-content: center;
+        }
+
+        @include media-sm{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

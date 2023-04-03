@@ -1,0 +1,220 @@
+// Media
+@mixin media-screen-large {
+    @media only screen and (min-width: 1920px){
+        @content;
+    }
+}
+
+@mixin media-lgx {
+    @media only screen and (max-width: 1770px){
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media only screen and (max-width: 1399px){
+        @content;
+    }
+}
+
+@mixin media-mdx {
+    @media only screen and (max-width: 1199px){
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media only screen and (max-width: 991px){
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media only screen and (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin media-xs {
+    @media only screen and (max-width: 479px){
+        @content;
+    }
+}
+
+// Secondary Fonts
+@mixin font-400(){
+    font-family: 'Play';
+    font-weight: 400;
+}
+
+@mixin font-700(){
+    font-family: 'Play';
+    font-weight: 700;
+}
+
+// Scrollbar
+@mixin scrollbar($size: 10px, $foreground-color: $scroll-bg, $background-color: $scroll-bg-track) {
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+        border-radius: $size;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+        border-radius: $size;
+    }
+}
+
+// Placeholder
+@mixin placeholder($color: $third-color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+}
+
+// Background transparency
+@mixin bg-transparency($color, $opacity: 0.5) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+// Rotation Effect
+@mixin rotation(){
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @keyframes spin{
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+}
+
+@mixin rotationInvert(){
+    animation-name: spinInvert;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @keyframes spinInvert{
+        from {
+            transform:rotate(360deg);
+        }
+        to {
+            transform:rotate(0deg);
+        }
+    }
+}
+
+// Gradient
+@mixin gradient($color1: $primary, $color2: $secondary, $position: right) {
+    &{
+        background-image: linear-gradient(to $position, $color1 0%, $color2 100%);
+    }
+}
+
+// Text gradient
+@mixin text-gradient($color1, $color2) {
+    &{
+        background: $color1;
+        background: linear-gradient(to right, $color1 0%, $color2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// Gradient Border
+@mixin gradient-border($color1, $color2, $radius: 36px) {
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        padding: 1px;
+        border-radius: $radius;
+        background: linear-gradient(-100deg, rgba($color1, 0.4) 0%, rgba($color2, 0.82) 100%);
+        -webkit-mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    & > * {
+        z-index: 1;
+    }
+}
+
+// Triangle Left
+@mixin triangle-left($color, $size: 12px) {
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: -#{$size};
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size $size $size 0;
+        border-color: transparent $color transparent transparent;
+    }
+}
+
+// Triangle Right
+@mixin triangle-right($color, $size: 12px) {
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        right: -#{$size};
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size 0 $size $size;
+        border-color: transparent transparent transparent $color;
+    }
+}
+
+// Triangle Bottom
+@mixin triangle-bottom($color, $size: 12px) {
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -#{$size};
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size $size 0 $size;
+        border-color: $color transparent transparent transparent;
+    }
+}

@@ -1,0 +1,86 @@
+.bounty__desc{
+    position: relative;
+}
+.bounty__desc ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.bounty__desc li{
+    width: 50%;
+    padding: 0 15px;
+    margin-top: 40px;
+}
+.bounty__desc li p{
+    font-size: 16px;
+}
+
+.bounty__form{
+    position: relative;
+    margin-top: 45px;
+}
+.bounty__timer{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.bounty__timer .title-h6{
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.bounty__timer .timer{
+    align-items: flex-end;
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.bounty__timer .timer sub,
+.bounty__timer .timer .sep{
+    font-size: 24px;
+}
+.bounty__timer .timer sub{
+    padding: 0 0 0 5px;
+    margin: 0;
+    bottom: 0;
+}
+.bounty__timer .timer .sep{
+    line-height: 1.2;
+}
+
+.bounty__tabs{
+    position: relative;
+    margin-top: 50px;
+}
+.bounty__tabs .tabs__body{
+    padding: 0;
+}
+.bounty__tabs .form-line{
+    margin-top: 15px;
+}
+.bounty__tabs .input-group textarea{
+    min-height: 160px;
+}
+
+#modalBounty img{
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 767px){
+    .bounty__desc li{
+        width: 100%;
+    }
+    .bounty__timer .timer{
+        align-items: center;
+        margin-top: 5px;
+    }
+    .bounty__timer .timer sub{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px){
+
+}

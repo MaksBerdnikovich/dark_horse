@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Horse</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Dark Horse">
+    <meta property="og:site_name" content="Dark Horse">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="dashboard">
+
+<header class="header">
+    <div class="header__list">
+        <ul>
+            <li>
+                <i><img src="dist/images/icons/user.png" alt="Welcome"></i>
+                <p>
+                    <span class="body-tiny">Welcome:</span>
+                    <b class="title-h6">Username_38262577</b>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta1.png" alt="Last entrance"></i>
+                <p>
+                    <span class="body-tiny">Last entrance:</span>
+                    <span class="tx-primary">12-12-2021 <span class="time">23:00</span></span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta2.png" alt="Last login with IP"></i>
+                <p>
+                    <span class="body-tiny">Last login with IP:</span>
+                    <span class="tx-primary">23.456.78.90</span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta3.png" alt=" Invited you"></i>
+                <p>
+                    <span class="body-tiny">Invited you:</span>
+                    <span class="tx-primary">Username_236561454</span>
+                </p>
+            </li>
+            <li>
+                <i><img src="dist/images/icons/ta4.png" alt="Your referral link"></i>
+                <p>
+                    <span class="body-tiny">Your referral link: <span class="copied" data-clipboard-confirm>Copied</span></span>
+                    <a href="javascript:void(0)" data-clipboard data-clipboard-text="https://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4">
+                        <code>https://companyname.com/referral/link/JXyM9NdgBrq4_ViXhA4</code>
+                        <i class="icon-copy" data-clipboard-confirm></i>
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main-content">
+    <nav class="navigation">
+        <div class="navigation__logo">
+            <a href="index.html"><img src="dist/images/logo/logo-hd.png" alt="logo"></a>
+        </div>
+
+        <nav class="navigation__menu" data-menu-nav>
+            <ul>
+                <li><a href="dashboard.html" class="active"><span>Dashboard</span><i class="icon-menu-1"></i></a></li>
+                <li><a href="deposits.html"><span>my deposits</span><i class="icon-menu-2"></i></a></li>
+                <li><a href="transactions.html"><span>transactions</span><i class="icon-menu-3"></i></a></li>
+                <li><a href="partners.html"><span>partners</span><i class="icon-menu-4"></i></a></li>
+                <li><a href="bounty.html"><span>bounty</span><i><img src="dist/images/icons/bounty.svg" width="26" height="26" /></i></a></li>
+                <li><a href="settings.html"><span>settings</span><i class="icon-menu-5"></i></a></li>
+                <li><a href="#"><span>log out</span><i class="icon-menu-6"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="navigation__menu-toggle" data-menu-toggle>
+            <span class="line line--1"></span>
+            <span class="line line--2"></span>
+            <span class="line line--3"></span>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="statistics">
+            <div class="carousel" data-stats-carousel>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/1.png" alt="btc">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. BTC</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. BTC</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. BTC</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/2.png" alt="eth">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. ETH</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. ETH</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. ETH</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/3.png" alt="bnb">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. BNB</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. BNB</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. BNB</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/4.png" alt="tron">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. TRON</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. TRON</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. TRON</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/5.png" alt="xrp">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. XRP</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. XRP</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. XRP</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/6.png" alt="doge">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. DOGE</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. DOGE</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. DOGE</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/7.png" alt="trc20">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. USDT</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item card">
+                        <i class="statistics__item-icon">
+                            <img src="dist/images/pays/8.png" alt="erc20">
+                        </i>
+                        <ul class="statistics__item-list">
+                            <li>
+                                <span class="body-small">Balance:</span>
+                                <b class="tx-primary">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Busy:</span>
+                                <b class="tx-pink">3245235. USDT</b>
+                            </li>
+                            <li>
+                                <span class="body-small">Withdrawn:</span>
+                                <b class="tx-blue">3245235. USDT</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu">
+            <div class="page-title-db">
+                <div class="page-title-db__wrap">
+                    <i><img src="dist/images/icons/menu-1.svg" alt="title"></i>
+                    <h2>Dashboard</h2>
+                </div>
+            </div>
+
+            <div class="submenu__list">
+                <a href="balance.html" class="btn btn-primary">top up balance</a>
+                <a href="deposits-open.html" class="btn btn-secondary btn-small">open deposit</a>
+                <a href="withdraw.html" class="btn btn-styled">withdraw</a>
+            </div>
+        </div>
+
+        <div class="userdata">
+            <div class="grid">
+                <div class="grid__item grid-item--50 mt-50 tablet-100">
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db1.png" alt="Next payment in">
+                        </div>
+                        <div class="desc">
+                            <span>Next payment in:</span>
+                            <ul class="timer title-h3 tx-primary" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                <li class="time hour">00</li>
+                                <li class="sep">:</li>
+                                <li class="time min">00</li>
+                                <li class="sep">:</li>
+                                <li class="time sec">00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--50 mt-50 tablet-100">
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db2.png" alt="The amount of the next accrual">
+                        </div>
+                        <div class="desc">
+                            <span>The amount of the next accrual:</span>
+                            <b class="title-h4 tx-primary">324783.34 USDT</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="userdata">
+            <div class="grid">
+                <div class="grid__item grid-item--25 mt-50">
+                    <div class="userdata__item item--small card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db3.png" alt="Total invested">
+                        </div>
+                        <div class="desc">
+                            <span>Total invested:</span>
+                            <b class="title-h4 tx-primary">352344.54 USD</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--25 mt-50">
+                    <div class="userdata__item item--small card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db4.png" alt="Total earned">
+                        </div>
+                        <div class="desc">
+                            <span>Total earned:</span>
+                            <b class="title-h4 tx-primary">352344.54 USD</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--25 mt-50">
+                    <div class="userdata__item item--small card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db5.png" alt=" Total output">
+                        </div>
+                        <div class="desc">
+                            <span>Total output:</span>
+                            <b class="title-h4 tx-primary">352344.54 USD</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--25 mt-50">
+                    <div class="userdata__item item--small card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db6.png" alt="Earned referrals">
+                        </div>
+                        <div class="desc">
+                            <span>Earned referrals:</span>
+                            <b class="title-h4 tx-primary">352344.54 USD</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="userdata">
+            <div class="grid">
+                <div class="grid__item grid-item--50 mt-50 tablet-100">
+                    <div class="userdata__item item--big card2 mb-20">
+                        <div class="icon">
+                            <img src="dist/images/icons/db7.png" alt="Total partners">
+                        </div>
+                        <div class="desc">
+                            <span>Total partners:</span>
+                            <b class="title-h3 tx-primary">3425</b>
+                        </div>
+                    </div>
+                    <div class="userdata__item item--big card2 mb-20">
+                        <div class="icon">
+                            <img src="dist/images/icons/db8.png" alt="Active">
+                        </div>
+                        <div class="desc">
+                            <span>Active:</span>
+                            <b class="title-h3 tx-primary">1324</b>
+                        </div>
+                    </div>
+                    <div class="userdata__item item--big card2 mb-20">
+                        <div class="icon">
+                            <img src="dist/images/icons/db9.png" alt="Inactive">
+                        </div>
+                        <div class="desc">
+                            <span>Inactive:</span>
+                            <b class="title-h3 tx-primary">2101</b>
+                        </div>
+                    </div>
+                    <div class="userdata__item item--big card2">
+                        <div class="icon">
+                            <img src="dist/images/icons/db10.png" alt="Last active partner">
+                        </div>
+                        <div class="desc">
+                            <span>Last active partner:</span>
+                            <b class="title-h4 tx-primary">Username_2873563877</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item grid-item--50 mt-50 tablet-100">
+                    <div class="page-title">
+                        <div class="page-title__wrap">
+                            <img src="dist/images/icons/t3.png" alt="title">
+                            <h4><span class="tx-primary">Your last</span> deposit</h4>
+                        </div>
+                    </div>
+
+                    <div class="deposit deposit--plan1">
+                        <div class="deposit__title">Plan: <span class="tx-styled">1</span></div>
+                        <div class="deposit__profit"><span class="title-large tx-styled">0.3%</span> per day</div>
+                        <div class="deposit__period">per day for <span class="tx-styled">14 days</span></div>
+                        <div class="deposit__info">
+                            <div class="deposit__info-stat">
+                                <ul>
+                                    <li><span>Opening date:</span><span class="tx-styled">02.12.2024 20:45</span></li>
+                                    <li><span>Deposit amount:</span><span class="tx-indigo">12500.00 USDT</span></li>
+                                    <li><span>For withdrawal:</span><span class="tx-blue">2390.00 USDT</span></li>
+                                    <li><span>Payment system:</span><span class="tx-styled">USDT TRC20</span></li>
+                                </ul>
+                            </div>
+                            <div class="deposit__info-data">
+                                <ul>
+                                    <li><span>Daily percentage:</span><b class="tx-styled">0.3%</b></li>
+                                    <li><span>Common:</span><b class="tx-styled">49%</b></li>
+                                    <li><span>Deposit period:</span><b class="tx-styled">14 Days</b></li>
+                                    <li><span>Deposit:</span><b class="tx-styled">At the end</b></li>
+                                    <li><span>Following charge:</span><b class="tx-styled">12.12.2024 12:00</b></li>
+                                    <li><span>Previous charge:</span><b class="tx-styled">15.23.2024 12:00</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="deposit__progress">
+                            <div class="deposit__progress-title">Remains to be assessed:</div>
+                            <div class="progressbar">
+                                <div class="progressbar__line">
+                                    <div class="progressbar__line-active" style="width: 80%"></div>
+                                </div>
+                                <div class="progressbar__range">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar">
+        <div class="sidebar__block">
+            <h4 class="sidebar__title"><span class="tx-primary">last</span> operations</h4>
+
+            <ul class="sidebar__operations">
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/btc.png" alt="btc"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/eth.png" alt="eth"></i>
+                        <p>
+                            <span class="tx-primary">Withdrawals</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--down"><span>-32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/bnb.png" alt="bnb"></i>
+                        <p>
+                            <span class="tx-primary">Withdrawals</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/tron.png" alt="tron"></i>
+                        <p>
+                            <span class="tx-primary">Replenishment</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/ripple.png" alt="ripple"></i>
+                        <p>
+                            <span class="tx-primary">Referral</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--down"><span>-32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/doge.png" alt="doge"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+                <li>
+                    <div class="sidebar__operations-item">
+                        <i><img src="dist/images/pays/trc20.png" alt="trc20"></i>
+                        <p>
+                            <span class="tx-primary">Opening a deposit</span>
+                            <span class="body-tiny">12-12-2023 <span class="time">23:00</span></span>
+                        </p>
+                    </div>
+                    <div class="sidebar__operations-profit profit--up"><span>+32424.32</span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar__block">
+            <h4 class="sidebar__title"><span class="tx-primary">latest</span> reviews</h4>
+
+            <ul class="sidebar__reviews">
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate...
+                            </p>
+                        </div>
+                        <div class="sidebar__reviews-item-link"><a href="#">More</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__reviews-item">
+                        <div class="sidebar__reviews-item-user">
+                            <div class="avatar" style="background-image: url('dist/images/icons/dummy.png')"></div>
+                            <div class="info">
+                                <b class="title-h6 tx-primary">Ivanovsky472</b>
+                                <span class="body-tiny">12-02-2023</span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews-item-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__socials">
+            <ul class="socials">
+                <li class="socials__item"><a href="#"><i class="icon-tg"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-fb"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-ins"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-tw"></i></a></li>
+                <li class="socials__item"><a href="#"><i class="icon-yo"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__copy">"Dark horse" all rights reserved © 2023</div>
+    </div>
+</footer>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

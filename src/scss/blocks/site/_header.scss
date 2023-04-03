@@ -1,0 +1,350 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    &.fixed {
+        background-color: $dark-90;
+        min-height: 60px;
+
+        .header__logo {
+            max-width: 70px;
+            left: 0;
+        }
+
+        .header__media{
+            display: none;
+        }
+    }
+
+    &__wrap{
+        position: relative;
+        display: flex;
+    }
+
+    &__logo {
+        position: relative;
+        max-width: 220px;
+        transition: $transition;
+
+        @include media-md{
+            max-width: 160px;
+        }
+
+        @include media-sm{
+            position: absolute;
+            max-width: 220px;
+            left: -60px;
+            top: 0;
+        }
+
+        @include media-xs{
+            max-width: 160px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            transition: $transition;
+        }
+
+        a{
+            display: flex;
+        }
+    }
+
+    &__info{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        align-self: flex-start;
+    }
+
+    &__media{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: auto;
+        margin-top: 30px;
+
+        @include media-sm{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__socials {
+        position: relative;
+        margin-right: auto;
+        padding-left: 40px;
+    }
+
+    &__board{
+        position: relative;
+        margin-left: auto;
+
+        @include media-sm{
+            margin-top: 30px;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 221px;
+            height: 118px;
+            transform: translateX(-50%);
+            background-image: url("../images/hero/tr.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+
+    &__menu {
+        position: relative;
+        width: 100%;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-width: 1022px;
+            height: 100%;
+            background-image: url("../images/hero/line.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+            z-index: 0;
+
+            @include media-sm{
+                display: none;
+            }
+        }
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            min-height: 60px;
+            margin-right: -20px;
+            z-index: 1;
+
+            @include media-md{
+                margin-right: -15px;
+            }
+
+            @include media-sm{
+                position: absolute;
+                width: 100%;
+                padding: 20px 40px;
+                justify-content: center;
+                margin: 0;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(-100%);
+                transition: $transition;
+                background-color: $dark-90;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+
+                &.open {
+                    z-index: 100;
+                    visibility: visible;
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            @include media-xs{
+                padding: 40px 0 20px 0;
+            }
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 54px;
+            padding: 0 20px;
+
+            @include media-md{
+                padding: 0 15px
+            }
+
+            @include font-400;
+            font-size: 14.9px;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $primary;
+            }
+
+            &.active{
+                color: $primary;
+                background-color: $dark-50;
+                border-radius: $corner;
+            }
+        }
+    }
+
+    &__menu-toggle{
+        display: none;
+
+        position: relative;
+        margin-left: auto;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        background-color: $dark-90;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 8px;
+
+        @include media-sm{
+            display: flex;
+        }
+
+        .line{
+            position: absolute;
+            width: 28px;
+            height: 1px;
+            top: 50%;
+            left: 50%;
+            margin-left: -14px;
+            background-color: $primary;
+            transition: $transition;
+        }
+
+        .line--1{
+            margin-top: -9px;
+        }
+
+        .line--3{
+            margin-top: 9px;
+        }
+
+        &.open {
+            z-index: 101;
+
+            .line--1{
+                margin-top: 0;
+                transform: rotate(40deg);
+            }
+
+            .line--2{
+                opacity: 0;
+            }
+
+            .line--3{
+                margin-top: 0;
+                transform: rotate(-40deg);
+            }
+        }
+    }
+}
+
+.header-sign{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &__wrap{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a{
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            @include media-xs{
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__socials{
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-width: 545px;
+        min-height: 60px;
+
+        @include media-mdx{
+            min-width: auto;
+            overflow: hidden;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -40px;
+            background-image: url("../images/bg/hd-start.png");
+            background-repeat: no-repeat;
+            background-position: top right;
+            z-index: 0;
+        }
+    }
+
+    &__faq{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 545px;
+        min-height: 60px;
+
+        @include media-mdx{
+            min-width: auto;
+            overflow: hidden;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -40px;
+            background-image: url("../images/bg/hd-end.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+        a{
+            position: relative;
+            display: inline-flex;
+            margin-left: 30px;
+            color: $cyan;
+            text-decoration: underline;
+            font-size: 15px;
+            text-transform: uppercase;
+
+            @include media-xs{
+                margin-left: 15px;
+            }
+        }
+    }
+}
